@@ -12,6 +12,9 @@ public class DataTypes {
      * - Mỗi class được coi như một kiểu dữ liệu mới.
      */
 
+    public char grade = 'A'; // Kiểu ký tự
+    private String name = "Java"; // Kiểu chuỗi
+
     public static void main(String[] args) {
         // Khai báo biến kiểu số nguyên
         byte b = 100;
