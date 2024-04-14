@@ -39,3 +39,14 @@ public class MethodOverloading {
         System.out.println("Sum of 10.5 and 20.5: " + sum(10.5, 20.5)); // -> 31.0
     }
 }
+
+// Nạp chồng phương thức khác với ghi đè phương thức (Method Overriding) trong
+// Java:
+/*
+ * - Nạp chồng phương thức (Method Overloading) là cách tạo nhiều phương thức
+ * cùng tên trong một lớp nhưng có số lượng tham số hoặc kiểu dữ liệu tham số
+ * khác nhau.
+ * - Ghi đè phương thức (Method Overriding) là cách tạo một phương thức trong
+ * lớp con có cùng tên, cùng tham số và cùng kiểu trả về với phương thức trong
+ * lớp cha.
+ */
