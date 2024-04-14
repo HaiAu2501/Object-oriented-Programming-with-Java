@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "src",
-        "Introduction",
-        "Data Structures and Algorithms"
+        "1. Introduction",
+        "2. Object-oriented Programming Principles",
+        "3. Data Structures and Algorithms"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
