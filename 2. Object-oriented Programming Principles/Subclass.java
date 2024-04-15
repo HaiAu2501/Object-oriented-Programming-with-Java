@@ -20,6 +20,12 @@ public class Subclass extends Superclass {
 
     // Một class chỉ có thể kế thừa từ một class khác.
 
+    // Shadowed variable (biến bị che phủ) là một biến cục bộ hoặc biến của lớp
+    // con có cùng tên với một biến của lớp cha.
+    // Biến của lớp con sẽ che phủ biến của lớp cha.
+
+    int superVar = 10;
+
     public static void main(String[] args) {
         Subclass subObj = new Subclass();
 
@@ -27,7 +33,9 @@ public class Subclass extends Superclass {
         // cho một biến của lớp cha. -> Tính đa hình (Polymorphism)
         Superclass superObj = subObj;
 
-        System.out.println("superVar: " + subObj.superVar); // -> 5
+        System.out.println("superVar: " + subObj.superVar);
+        // -> 10 (biến của lớp con che phủ biến của lớp cha)
+
         // System.out.println("privateVar: " + obj.privateVar);
         // Lỗi: privateVar has private access in Superclass
         subObj.display(); // -> This is the display method of superclass
