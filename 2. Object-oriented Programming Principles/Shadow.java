@@ -1,4 +1,4 @@
-public class Overdding {
+public class Shadow {
     // Ghi đè phương thức (Method Overriding) trong Java:
     /*
      * - Ghi đè phương thức (Method Overriding) là cách tạo một phương thức trong
