@@ -15,8 +15,11 @@ I. [**Introduction**](1.%20Introduction/)
 9. [ObjectInJava](1.%20Introduction/ObjectsInJava.java)
 10. [ObjectCreation](1.%20Introduction/ObjectCreation.java)
 11. [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
+12. [ThisReference](1.%20Introduction/ThisReference.java)
 
 II. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
+
+III. [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
 
 ## Máy ảo Java (Java Virtual Machine - JVM)
 
