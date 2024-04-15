@@ -1,3 +1,4 @@
+@SuppressWarnings("unused")
 class Superclass {
     int superVar = 5;
     private int privateVar = 10;
@@ -20,11 +21,16 @@ public class Subclass extends Superclass {
     // Một class chỉ có thể kế thừa từ một class khác.
 
     public static void main(String[] args) {
-        Subclass obj = new Subclass();
-        System.out.println("superVar: " + obj.superVar); // -> 5
-        // System.out.println("privateVar: " + obj.privateVar); // Lỗi: privateVar has
-        // private access in Superclass
-        obj.display(); // -> This is the display method of superclass
+        Subclass subObj = new Subclass();
+
+        // Khi một lớp con kế thừa từ lớp cha, đối tượng của lớp con có thể được gán
+        // cho một biến của lớp cha. -> Tính đa hình (Polymorphism)
+        Superclass superObj = subObj;
+
+        System.out.println("superVar: " + subObj.superVar); // -> 5
+        // System.out.println("privateVar: " + obj.privateVar);
+        // Lỗi: privateVar has private access in Superclass
+        subObj.display(); // -> This is the display method of superclass
 
     }
 
