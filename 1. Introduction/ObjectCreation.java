@@ -1,3 +1,9 @@
+// Các đối tượng trong Java được lưu trữ trong vùng nhớ heap. 
+/*
+ * - Không như các ngôn ngữ khác, chúng ta không phải quản lý bộ nhớ thủ công.
+ * - Java cấp phát bộ nhớ tự động và giải phóng bộ nhớ khi không cần thiết.
+ */
+
 public class ObjectCreation {
     // Hàm tạo (Constructor) trong Java:
     /*
