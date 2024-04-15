@@ -2,22 +2,21 @@
 
 ## Mục lục
 
-I. [Introduction](1.%20Introduction/)
+I. [**Introduction**](1.%20Introduction/)
 
 1. [HelloWorld](1.%20Introduction/HelloWorld.java)
 2. [HelloJava](1.%20Introduction/HelloJava.java)
 3. [DataTypes](1.%20Introduction/DataTypes.java)
 4. [Wrappers](1.%20Introduction/Wrappers.java)
 5. [Boxing](1.%20Introduction/Boxing.java)
-6. Arrays
-7. ArgumentPassing
-8. MethodOverloading
-9. ObjectInJava
-10. ObjectCreation
-11. ObjectDestruction
-12. MethodOverloading
+6. [Arrays](1.%20Introduction/Arrays.java)
+7. [ArgumentPassing](1.%20Introduction/ArgumentPassing.java)
+8. [MethodOverloading](1.%20Introduction/MethodOverloading.java)
+9. [ObjectInJava](1.%20Introduction/ObjectsInJava.java)
+10. [ObjectCreation](1.%20Introduction/ObjectCreation.java)
+11. [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
 
-II. Object-oriented Programming Principles
+II. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
 
 ## Máy ảo Java (Java Virtual Machine - JVM)
 
