@@ -1,3 +1,4 @@
+@SuppressWarnings("unused")
 public class DataTypes {
     /*
      * Các kiểu dữ liệu trong Java chia thành 2 loại:

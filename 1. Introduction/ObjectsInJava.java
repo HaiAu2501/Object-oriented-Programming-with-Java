@@ -6,6 +6,7 @@
  * - private: lớp chỉ có thể được truy cập từ bên trong lớp đó.
  */
 
+@SuppressWarnings("static-access")
 public class ObjectsInJava {
     int var;
     double number;
