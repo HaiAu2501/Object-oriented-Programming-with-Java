@@ -24,7 +24,10 @@ public class Subclass extends Superclass {
     // con có cùng tên với một biến của lớp cha.
     // Biến của lớp con sẽ che phủ biến của lớp cha.
 
-    int superVar = 10;
+    double superVar = 10;
+
+    // Gọi đến biến superVar của lớp cha -> dùng tham chiếu super
+    int var = super.superVar;
 
     public static void main(String[] args) {
         Subclass subObj = new Subclass();
@@ -35,6 +38,8 @@ public class Subclass extends Superclass {
 
         System.out.println("superVar: " + subObj.superVar);
         // -> 10 (biến của lớp con che phủ biến của lớp cha)
+
+        System.out.println("superVar: " + subObj.var); // -> 5
 
         // System.out.println("privateVar: " + obj.privateVar);
         // Lỗi: privateVar has private access in Superclass
