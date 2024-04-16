@@ -15,6 +15,7 @@
                 "span",
                 "details",
                 "summary",
+                "br",
             ]
         },
         "MD029": {
