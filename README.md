@@ -2,10 +2,8 @@
 
 ## Mục lục
 
-<ol>
-
 <details>
-<summary>Phần 1: Giới thiệu</summary>
+<summary><span style="font-weight: bold; color: #5BBCFF;">Phần 1:</span> Giới thiệu</summary>
 
 - [**Introduction**](1.%20Introduction/)
   - [HelloWorld](1.%20Introduction/HelloWorld.java)
@@ -39,8 +37,6 @@
 - [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
 
 </details>
-
-</ol>
 
 ## Máy ảo Java (Java Virtual Machine - JVM)
 
