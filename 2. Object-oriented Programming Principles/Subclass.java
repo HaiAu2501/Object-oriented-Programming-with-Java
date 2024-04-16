@@ -51,7 +51,7 @@ public class Subclass extends Superclass {
 }
 
 // Lớp con có thể được tiếp tục kế thừa bởi một lớp khác.
-class SubSubclass extends Subclass {
+class Subsubclass extends Subclass {
     // Lớp SubSubclass kế thừa tất cả thuộc tính và phương thức của lớp Subclass.
     // Lớp SubSubclass cũng có thể định nghĩa thêm thuộc tính và phương thức của
     // riêng mình.

@@ -63,6 +63,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <details>
 <summary>Phần 1: Giới thiệu</summary>
+<br/>
 
 - [**Bắt đầu với Java**](#bắt-đầu-với-java)
   - Máy ảo Java
@@ -87,6 +88,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 <details>
 
 <summary>Phần 2: Nguyên lý lập trình hướng đối tượng</summary>
+<br/>
 
 - [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
   - [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
@@ -96,6 +98,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 <details>
 
 <summary>Phần 3: Cấu trúc dữ liệu và thuật toán</summary>
+<br/>
 
 - [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
 
@@ -104,8 +107,10 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 <details>
 
 <summary>Phụ lục</summary>
+<br/>
 
 - [**Tài liệu tham khảo**](#tài-liệu-tham-khảo)
+- [**Tải xuống tài liệu tham khảo**](documents)
 
 </details>
 
