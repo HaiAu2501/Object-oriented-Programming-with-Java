@@ -27,9 +27,8 @@
 
 <summary>Phần 2: Nguyên lý lập trình hướng đối tượng</summary>
 
-<li>2. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)</li>
-
-    1. [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
+- [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
+  - [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
 
 </details>
 
@@ -37,7 +36,7 @@
 
 <summary>Phần 3: Cấu trúc dữ liệu và thuật toán</summary>
 
-<li>3. [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)</li>
+- [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
 
 </details>
 
