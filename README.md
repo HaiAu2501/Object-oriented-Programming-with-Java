@@ -67,8 +67,9 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 - [**Bắt đầu với Java**](#bắt-đầu-với-java)
   - Máy ảo Java
-  - So sánh Java với các ngôn ngữ lập trình khác
-  - Tính an toàn của thiết kế và triển khai
+  - So sánh Java với một số ngôn ngữ lập trình khác: tính di động, tốc độ và an toàn
+  - Quản lý động bộ nhớ
+  - Khả năng phát hiện và xử lý lỗi
 - [**Introduction**](1.%20Introduction/)
   - [HelloWorld](1.%20Introduction/HelloWorld.java)
   - [HelloJava](1.%20Introduction/HelloJava.java)
