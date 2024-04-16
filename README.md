@@ -2,8 +2,9 @@
 
 ## Mục lục
 
-<details open>
-<summary>1. [**Introduction**](1.%20Introduction/)</summary>
+<details>
+
+1. [**Introduction**](1.%20Introduction/)
 
     1. [HelloWorld](1.%20Introduction/HelloWorld.java)
     2. [HelloJava](1.%20Introduction/HelloJava.java)
@@ -17,6 +18,7 @@
     10. [ObjectCreation](1.%20Introduction/ObjectCreation.java)
     11. [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
     12. [ThisReference](1.%20Introduction/ThisReference.java)
+
 </details>
 
 2. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
