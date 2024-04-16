@@ -92,6 +92,9 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 - [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
   - [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
+  - [Casting](2.%20Object-oriented%20Programming%20Principles/Casting.java)
+  - [SuperConstructor](2.%20Object-oriented%20Programming%20Principles/SuperConstructor.java)
+  - [Abtract](2.%20Object-oriented%20Programming%20Principles/Abstract.java)
 
 </details>
 
