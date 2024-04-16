@@ -12,7 +12,6 @@ class Superclass {
     }
 }
 
-@SuppressWarnings("unused")
 public class Subclass extends Superclass {
     // Lớp trong Java tồn tại trong một hệ thống phân cấp.
     /*

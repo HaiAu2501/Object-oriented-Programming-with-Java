@@ -96,6 +96,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [Casting](2.%20Object-oriented%20Programming%20Principles/Casting.java)
   - [SuperConstructor](2.%20Object-oriented%20Programming%20Principles/SuperConstructor.java)
   - [Abtract](2.%20Object-oriented%20Programming%20Principles/Abstract.java)
+  - [Interface](2.%20Object-oriented%20Programming%20Principles/Interface.java)
 
 </details>
 

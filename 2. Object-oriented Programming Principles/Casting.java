@@ -11,7 +11,6 @@ class Dog extends Animal {
     }
 }
 
-@SuppressWarnings("unused")
 public class Casting {
     // Ép kiểu (Casting) trong Java là quá trình chuyển đổi giữa các kiểu dữ liệu.
     // Có hai loại ép kiểu: ép kiểu ngầm định (implicit casting) và ép kiểu tường
