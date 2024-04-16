@@ -40,7 +40,7 @@
 
 ## Máy ảo Java (Java Virtual Machine - JVM)
 
-<span style="font-weight: bold; color: blue;">Java vừa là ngôn ngữ lập trình vừa được **biên dịch** (complied) vừa được **thông dịch** (interpreted). Mã nguồn Java được chuyển thành các lệnh nhị phân đơn giản, giống như mã máy của vi xử lý thông thường. Tuy nhiên, trong khi mã nguồn C hoặc C++ được biến đổi thành các lệnh bản địa cho một mô hình vi xử lý cụ thể, mã nguồn Java được biên dịch thành một định dạng chung - các lệnh cho một máy ảo.</span>
+Java vừa là ngôn ngữ lập trình vừa được **biên dịch** (complied) vừa được **thông dịch** (interpreted). Mã nguồn Java được chuyển thành các lệnh nhị phân đơn giản, giống như mã máy của vi xử lý thông thường. Tuy nhiên, trong khi mã nguồn C hoặc C++ được biến đổi thành các lệnh bản địa cho một mô hình vi xử lý cụ thể, mã nguồn Java được biên dịch thành một định dạng chung - các lệnh cho một máy ảo.
 
 Bytecode Java được thực thi bởi JVM, một máy ảo tiêu chuẩn hóa hoạt động như một bộ xử lý giả lập. JVM giúp Java có khả năng chạy được trên nhiều nền tảng khác nhau mà không cần sửa đổi mã - tính *viết một lần, chạy mọi nơi* (write once, run anywhere).
 
