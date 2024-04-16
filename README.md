@@ -2,9 +2,13 @@
 
 ## Mục lục
 
+<ol>
+
 <details>
 
-1. [**Introduction**](1.%20Introduction/)
+<summary>Phần 1: Giới thiệu</summary>
+
+<li>1. [**Introduction**](1.%20Introduction/)</li>
 
     1. [HelloWorld](1.%20Introduction/HelloWorld.java)
     2. [HelloJava](1.%20Introduction/HelloJava.java)
@@ -21,11 +25,25 @@
 
 </details>
 
-2. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
+<details>
+
+<summary>Phần 2: Nguyên lý lập trình hướng đối tượng</summary>
+
+<li>2. [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)</li>
 
     1. [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
 
-3. [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
+</details>
+
+<details>
+
+<summary>Phần 3: Cấu trúc dữ liệu và thuật toán</summary>
+
+<li>3. [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)</li>
+
+</details>
+
+</ol>
 
 ## Máy ảo Java (Java Virtual Machine - JVM)
 

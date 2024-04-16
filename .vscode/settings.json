@@ -8,5 +8,18 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "markdownlint.config": {
+        "MD033": {
+            "allowed_elements": [
+                "ol",
+                "li",
+                "details",
+                "summary",
+            ]
+        },
+        "MD029": {
+            "style": "one_or_ordered"
+        }
+    }
 }
