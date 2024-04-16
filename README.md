@@ -1,5 +1,7 @@
 # Lập trình hướng đối tượng với Java
 
+![intro](images/logo.png)
+
 ## Mục lục
 
 <details>
