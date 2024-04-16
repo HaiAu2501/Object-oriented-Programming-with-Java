@@ -5,24 +5,23 @@
 <ol>
 
 <details>
-
 <summary>Phần 1: Giới thiệu</summary>
 
 <li>1. [**Introduction**](1.%20Introduction/)</li>
-
-    1. [HelloWorld](1.%20Introduction/HelloWorld.java)
-    2. [HelloJava](1.%20Introduction/HelloJava.java)
-    3. [DataTypes](1.%20Introduction/DataTypes.java)
-    4. [Wrappers](1.%20Introduction/Wrappers.java)
-    5. [Boxing](1.%20Introduction/Boxing.java)
-    6. [Arrays](1.%20Introduction/Arrays.java)
-    7. [ArgumentPassing](1.%20Introduction/ArgumentPassing.java)
-    8. [MethodOverloading](1.%20Introduction/MethodOverloading.java)
-    9. [ObjectInJava](1.%20Introduction/ObjectsInJava.java)
-    10. [ObjectCreation](1.%20Introduction/ObjectCreation.java)
-    11. [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
-    12. [ThisReference](1.%20Introduction/ThisReference.java)
-
+    <ol>
+        <li>[HelloWorld](1.%20Introduction/HelloWorld.java)</li>
+        <li>[HelloJava](1.%20Introduction/HelloJava.java)</li>
+        <li>[DataTypes](1.%20Introduction/DataTypes.java)</li>
+        <li>[Wrappers](1.%20Introduction/Wrappers.java)</li>
+        <li>[Boxing](1.%20Introduction/Boxing.java)</li>
+        <li>[Arrays](1.%20Introduction/Arrays.java)</li>
+        <li>[ArgumentPassing](1.%20Introduction/ArgumentPassing.java)</li>
+        <li>[MethodOverloading](1.%20Introduction/MethodOverloading.java)</li>
+        <li>[ObjectsInJava](1.%20Introduction/ObjectsInJava.java)</li>
+        <li>[ObjectCreation](1.%20Introduction/ObjectCreation.java)</li>
+        <li>[ObjectDestruction](1.%20Introduction/ObjectDestruction.java)</li>
+        <li>[ThisReference](1.%20Introduction/ThisReference.java)</li>
+    </ol>
 </details>
 
 <details>
