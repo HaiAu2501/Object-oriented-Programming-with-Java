@@ -121,23 +121,57 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <details>
 
-<summary>1. Máy ảo Java</summary>
+<summary>1. Máy ảo Java (JVM)</summary>
+<br/>
 
-Java vừa là ngôn ngữ lập trình vừa được **biên dịch** (complied) vừa được **thông dịch** (interpreted). Mã nguồn Java được chuyển thành các lệnh nhị phân đơn giản, giống như mã máy của vi xử lý thông thường. Tuy nhiên, trong khi mã nguồn C hoặc C++ được biến đổi thành các lệnh bản địa cho một mô hình vi xử lý cụ thể, mã nguồn Java được biên dịch thành một định dạng chung - các lệnh cho một máy ảo.
+Java vừa là ngôn ngữ lập trình vừa được **biên dịch** (complied) vừa được **thông dịch** (interpreted). Trong Java, mã nguồn được biên dịch thành bytecode, đó là các chỉ thị nhị phân đơn giản hoạt động như mã máy cho máy tính. Tuy nhiên, khác với C hay C++, bytecode của Java không phải là mã máy bản địa cho bất kỳ loại vi xử lý cụ thể nào mà là cho một máy ảo Java (JVM), một nền tảng chung cho mọi hệ thống.
 
-Bytecode Java được thực thi bởi JVM, một máy ảo tiêu chuẩn hóa hoạt động như một bộ xử lý giả lập. JVM giúp Java có khả năng chạy được trên nhiều nền tảng khác nhau mà không cần sửa đổi mã - tính *viết một lần, chạy mọi nơi* (write once, run anywhere).
+Bytecode này sau đó được máy ảo Java thông dịch và thực thi như thể nó là mã máy bản địa. JVM hoạt động giống như một hệ điều hành thực sự trong việc quản lý bộ nhớ và xử lý các lệnh, đảm bảo an toàn và di động của mã. Mọi đặc điểm của ngôn ngữ Java đều được định nghĩa rõ ràng, không phụ thuộc vào hệ thống nền tảng cụ thể nào, giúp Java có khả năng chạy đồng nhất trên nhiều nền tảng khác nhau mà không cần chỉnh sửa mã.
 
 JVM cung cấp một môi trường thực thi an toàn, nơi nó thực hiện các chức năng tương tự như một hệ điều hành. Nó quản lý bộ nhớ, thực thi các lệnh dựa trên ngăn xếp, và xử lý các kiểu dữ liệu nguyên thủy. Việc này giảm thiểu các rủi ro bảo mật và tăng tính ổn định của ứng dụng.
 
 </details>
 
-- *Đơn vị cơ bản của mã Java là lớp (class)*. Trong Java và các ngôn ngữ hướng đối tượng khác, lớp là thành phần ứng dụng chứa mã thực thi và dữ liệu.
+<details>
 
-- Lớp được lưu trữ và tải một cách động khi ứng dụng cần tới, điều này cho phép Java quản lý hiệu quả các tài nguyên và chỉ tải những gì cần thiết.
+<summary>2. So sánh Java với một số ngôn ngữ lập trình khác: tính di động, tốc độ và an toàn</summary>
+<br/>
 
-- Java mang lại một số tính năng quản lý bộ nhớ tiên tiến để cải thiện an toàn, khả năng di động, và khả năng tối ưu hóa. Java loại bỏ các con trỏ linh tinh có thể tham chiếu tới bất kỳ khu vực nào trong bộ nhớ và thêm thu gom rác (garbage collection) cùng mảng cấp cao vào ngôn ngữ.
+Dù có vẻ ngoài tương tự như C và C++ về cú pháp, Java không phải là hậu duệ trực tiếp của C hay là phiên bản tiếp theo của C++. Java có nhiều điểm chung với các ngôn ngữ động như Smalltalk và Lisp hơn là với C. Sự giống nhau chỉ dừng lại ở cú pháp bên ngoài như sử dụng nhiều dấu ngoặc nhọn và dấu chấm phẩy. Java thừa hưởng triết lý của C về một ngôn ngữ tốt nên gọn nhẹ, dễ nhớ nhưng lại mở rộng vốn từ vựng qua các gói lớp Java.
 
-- Mặc dù Java không có con trỏ theo nghĩa truyền thống, nó cung cấp các **tham chiếu**, một loại con trỏ an toàn. Tất cả đối tượng trong Java, ngoại trừ các kiểu số nguyên thủy, đều được truy cập qua các tham chiếu. Bạn có thể sử dụng các tham chiếu để xây dựng các cấu trúc dữ liệu thông thường mà một lập trình viên C sẽ làm với con trỏ, nhưng phải theo cách an toàn về kiểu dữ liệu. Khác với con trỏ, bạn không thể sử dụng các thao tác số học trên tham chiếu để thay đổi giá trị của chúng; chúng chỉ có thể chỉ đến các đối tượng cụ thể hoặc các phần tử của mảng. Tham chiếu là một thực thể nguyên tử; bạn không thể thao túng giá trị của một tham chiếu ngoài việc gán nó cho một đối tượng. Sự bảo vệ này là một trong những khía cạnh cơ bản nhất của an ninh Java, đảm bảo rằng mã Java phải tuân theo các quy tắc; nó không thể nhìn trộm vào những nơi không được phép.
+Ngôn ngữ kịch bản như Perl, Python và Ruby rất phổ biến vì chúng phù hợp cho các ứng dụng an toàn, được kết nối mạng. Tuy nhiên, hầu hết các ngôn ngữ kịch bản không được thiết kế cho lập trình quy mô lớn nghiêm túc. Chúng thường không phù hợp cho các dự án lớn hay phức tạp vì cấu trúc chương trình lỏng lẻo và hệ thống kiểu dữ liệu đơn giản.
+
+Java cung cấp một nền tảng an toàn để phát triển các framework cấp cao hơn và thậm chí là các ngôn ngữ khác, kết hợp sự đơn giản và tính năng của Java cho phép phát triển nhanh chóng và dễ dàng thay đổi ứng dụng. Java cũng đã học hỏi từ các tính năng của Smalltalk và cải tiến chúng, đặc biệt là trong việc sử dụng bộ kiểm tra bytecode để đảm bảo tính chính xác của mã Java biên dịch, giúp nâng cao hiệu suất và đảm bảo an toàn hơn so với Smalltalk.
+
+Java được thiết kế để là một ngôn ngữ an toàn, không chỉ chống lại các lỗi phần mềm mà còn các vấn đề thường gặp trong thiết kế và lập trình. Java cung cấp nhiều lớp bảo vệ, từ kiểm tra an toàn của mã trước khi chạy cho đến cách thức mà trình tải lớp (class loader), một cơ chế tải bytecode của trình thông dịch Java, tạo ra một "bức tường" xung quanh các lớp không đáng tin cậy. Những tính năng này là nền tảng cho các chính sách bảo mật cấp cao, cho phép hoặc không cho phép các loại hoạt động khác nhau trên từng ứng dụng.
+
+Java bắt đầu từ một "tấm bảng trắng" và do đó có thể tránh được những tính năng phức tạp hoặc gây tranh cãi có trong các ngôn ngữ khác. Ví dụ, Java không cho phép lập trình viên tái định nghĩa các toán tử (như + hay -), không có tiền xử lý mã nguồn như macros hay #define statements, những thứ thường được dùng trong các ngôn ngữ khác để hỗ trợ sự phụ thuộc vào nền tảng.
+
+Java cũng cung cấp một cấu trúc gói (package) rõ ràng để tổ chức các tệp lớp, giúp trình biên dịch xử lý một số chức năng của công cụ make truyền thống một cách hiệu quả. Mọi thông tin kiểu dữ liệu đều được bảo toàn trong các lớp Java đã biên dịch, không cần tới các tệp tiêu đề nguồn thừa như trong C/C++. Điều này khiến mã Java dễ đọc và ít cần đến ngữ cảnh hơn.
+
+Java chỉ hỗ trợ kế thừa đơn (mỗi lớp chỉ có một lớp "cha" duy nhất) nhưng cho phép kế thừa nhiều giao diện (interface). Giao diện trong Java, tương tự như lớp trừu tượng trong C++, xác định hành vi của một đối tượng mà không định nghĩa thực thi của nó. Đây là một cơ chế mạnh mẽ cho phép nhà phát triển định nghĩa một "hợp đồng" về hành vi của đối tượng mà có thể được sử dụng và tham chiếu một cách độc lập với bất kỳ thực thi đối tượng cụ thể nào.
+
+</details>
+
+<details>
+
+<summary>3. Quản lý động bộ nhớ</summary>
+<br/>
+
+Java loại bỏ việc sử dụng con trỏ có thể tham chiếu tới bất kỳ khu vực bộ nhớ nào và thêm vào thu gom rác tự động cùng mảng cấp cao. Những tính năng này giúp loại bỏ nhiều vấn đề liên quan đến an toàn, khả năng chuyển đổi và tối ưu hóa mà các ngôn ngữ khác thường gặp phải. Trong Java, các đối tượng không còn được sử dụng sẽ tự động được thu hồi bộ nhớ, giảm thiểu lỗi do quản lý bộ nhớ thủ công.
+
+Java không sử dụng con trỏ theo nghĩa truyền thống mà thay vào đó là các tham chiếu, định kiểu chặt chẽ và an toàn hơn. Các đối tượng trong Java, ngoại trừ các kiểu nguyên thủy, được truy cập qua tham chiếu. Điều này cho phép xây dựng các cấu trúc dữ liệu phức tạp một cách an toàn về kiểu dữ liệu mà không có rủi ro liên quan đến con trỏ trong C/C++.
+
+</details>
+
+<details>
+
+<summary>4. Khả năng phát hiện và xử lý lỗi</summary>
+<br/>
+
+Java được thiết kế để xử lý lỗi một cách thông minh và hiệu quả, nhờ vào cơ chế quản lý ngoại lệ mạnh mẽ. Trong Java, các lỗi không chỉ được bắt và xử lý tại một nơi cụ thể trong chương trình thông qua khối mã "catch", mà còn được đóng gói thành các đối tượng ngoại lệ. Mỗi đối tượng này mang thông tin về nguyên nhân gây ra lỗi, giúp lập trình viên dễ dàng hiểu và xử lý lỗi một cách chính xác. Trình biên dịch Java đòi hỏi phương thức phải tuyên bố các ngoại lệ mà nó có thể phát sinh, hoặc là phải tự xử lý chúng ngay lập tức. Điều này giúp đưa thông tin lỗi lên cùng mức độ quan trọng với các thông tin khác như kiểu dữ liệu trả về hay tham số của phương thức. Qua đó, khi lập trình, bạn có thể dự đoán và chuẩn bị sẵn sàng cho các tình huống có thể xảy ra, đảm bảo rằng ứng dụng của bạn sẽ hoạt động ổn định và an toàn hơn.
+
+</details>
 
 ## Tài liệu tham khảo
 
