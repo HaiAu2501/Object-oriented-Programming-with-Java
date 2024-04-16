@@ -3,7 +3,7 @@
 ## Mục lục
 
 <details>
-<summary><span style="font-weight: bold; color: #5BBCFF;">Phần 1:</span> Giới thiệu</summary>
+<summary><span style="font-weight: bold; color: blue;">Phần 1:</span> Giới thiệu</summary>
 
 - [**Introduction**](1.%20Introduction/)
   - [HelloWorld](1.%20Introduction/HelloWorld.java)
