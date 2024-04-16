@@ -7,21 +7,20 @@
 <details>
 <summary>Phần 1: Giới thiệu</summary>
 
-<li>1. [**Introduction**](1.%20Introduction/)</li>
-    <ol>
-        <li>[HelloWorld](1.%20Introduction/HelloWorld.java)</li>
-        <li>[HelloJava](1.%20Introduction/HelloJava.java)</li>
-        <li>[DataTypes](1.%20Introduction/DataTypes.java)</li>
-        <li>[Wrappers](1.%20Introduction/Wrappers.java)</li>
-        <li>[Boxing](1.%20Introduction/Boxing.java)</li>
-        <li>[Arrays](1.%20Introduction/Arrays.java)</li>
-        <li>[ArgumentPassing](1.%20Introduction/ArgumentPassing.java)</li>
-        <li>[MethodOverloading](1.%20Introduction/MethodOverloading.java)</li>
-        <li>[ObjectsInJava](1.%20Introduction/ObjectsInJava.java)</li>
-        <li>[ObjectCreation](1.%20Introduction/ObjectCreation.java)</li>
-        <li>[ObjectDestruction](1.%20Introduction/ObjectDestruction.java)</li>
-        <li>[ThisReference](1.%20Introduction/ThisReference.java)</li>
-    </ol>
+- [**Introduction**](1.%20Introduction/)
+  - [HelloWorld](1.%20Introduction/HelloWorld.java)
+  - [HelloJava](1.%20Introduction/HelloJava.java)
+  - [DataTypes](1.%20Introduction/DataTypes.java)
+  - [Wrappers](1.%20Introduction/Wrappers.java)
+  - [Boxing](1.%20Introduction/Boxing.java)
+  - [Arrays](1.%20Introduction/Arrays.java)
+  - [ArgumentPassing](1.%20Introduction/ArgumentPassing.java)
+  - [MethodOverloading](1.%20Introduction/MethodOverloading.java)
+  - [ObjectsInJava](1.%20Introduction/ObjectsInJava.java)
+  - [ObjectCreation](1.%20Introduction/ObjectCreation.java)
+  - [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
+  - [ThisReference](1.%20Introduction/ThisReference.java)
+
 </details>
 
 <details>
