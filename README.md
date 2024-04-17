@@ -6,8 +6,6 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/HUST-course-blue?labelColor=FF6868&color=DCFFB7">
 <img alt="Static Badge" src="https://img.shields.io/badge/open_source-for_education-blue?labelColor=365486&color=DCF2F1">
 <img alt="Static Badge" src="https://img.shields.io/badge/newbie-learn_to_code-blue?labelColor=6962AD&color=83C0C1">
-</p>
-<p align = "center">
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=FFF5E0&color=8DECB4">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=1679AB&color=C5FF95">
 <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=A34343&color=E9C874">
