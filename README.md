@@ -2,6 +2,19 @@
 
 ![intro](images/logo.png)
 
+<p align = "center">
+<img alt="Static Badge" src="https://img.shields.io/badge/HUST-course-blue?labelColor=FF6868&color=DCFFB7">
+<img alt="Static Badge" src="https://img.shields.io/badge/open_source-for_education-blue?labelColor=365486&color=DCF2F1">
+<img alt="Static Badge" src="https://img.shields.io/badge/newbie-learn_to_code-blue?labelColor=6962AD&color=83C0C1">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=FFF5E0&color=8DECB4">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=1679AB&color=C5FF95">
+<img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=A34343&color=E9C874">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=FFD1E3&color=FFFAB7">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=DD5746&color=FFC470">
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=7AA2E3&color=97E7E1">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/HaiAu2501/Object-oriented-Programming-with-Java?labelColor=4CCD99&color=FFF455">
+</p>
+
 Chào mừng bạn đến với kho lưu trữ **Lập trình hướng đối tượng với Java**! Nơi đây cung cấp một nguồn tài nguyên toàn diện để khám phá và học hỏi lập trình hướng đối tượng qua ngôn ngữ Java.
 
 > Lập trình hướng đối tượng (OOP - Object-Oriented Programming) là một mô hình lập trình phổ biến được sử dụng rộng rãi trong phát triển phần mềm. Nó được dựa trên các khái niệm về "đối tượng", là các thực thể kết hợp cả dữ liệu (thuộc tính) và các phương thức (hành vi). OOP tập trung vào việc thiết kế phần mềm dựa trên các đối tượng tương tác với nhau, thay vì quy trình và logic như trong lập trình hướng thủ tục.

@@ -13,10 +13,11 @@
     "markdownlint.config": {
         "MD033": {
             "allowed_elements": [
-                "span",
+                "p",
                 "details",
                 "summary",
                 "br",
+                "img",
             ]
         },
         "MD029": {
