@@ -88,10 +88,12 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [DataTypes](1.%20The%20Java%20Language/DataTypes.java)
   - [Wrappers](1.%20The%20Java%20Language/Wrappers.java)
   - [Boxing](1.%20The%20Java%20Language/Boxing.java)
+  - [Enumerations](1.%20The%20Java%20Language/Enumerations.java)
   - [Arrays](1.%20The%20Java%20Language/Arrays.java)
   - [ArgumentPassing](1.%20The%20Java%20Language/ArgumentPassing.java)
   - [MethodOverloading](1.%20The%20Java%20Language/MethodOverloading.java)
   - [ObjectsInJava](1.%20The%20Java%20Language/ObjectsInJava.java)
+  - [InitializerBlock](1.%20The%20Java%20Language/InitializerBlock.java)
   - [ObjectCreation](1.%20The%20Java%20Language/ObjectCreation.java)
   - [ObjectDestruction](1.%20The%20Java%20Language/ObjectDestruction.java)
   - [ThisReference](1.%20The%20Java%20Language/ThisReference.java)
@@ -121,12 +123,27 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 <summary>Phần 3: Công cụ cơ bản và thiết yếu của Java</summary>
 
 - [**Core Ultilities**](3.%20Core%20Ultilities/)
+  - [StringTips](3.%20Core%20Ultilities/StringTips.java)
+  - [Math](3.%20Core%20Ultilities/Math.java)
+  - [Random](3.%20Core%20Ultilities/Random.java)
+  - [Time](3.%20Core%20Ultilities/Time.java)
+  - [Collections](3.%20Core%20Ultilities/Collections.java)
+  - [Iteration](3.%20Core%20Ultilities/Iteration.java)
+  - [Properties](3.%20Core%20Ultilities/Properties.java)
+  - [LoggingAPI](3.%20Core%20Ultilities/LoggingAPI.java)
 
 </details>
 
 <details>
 
 <summary>Phần 4: Tiện ích vào - ra với Java</summary>
+
+- [**IO Facilities**](4.%20IO%20Facilities/)
+  - Streams
+  - Pipes
+  - Files
+  - DataCompression
+  - Buffers
 
 </details>
 
