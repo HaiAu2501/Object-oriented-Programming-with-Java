@@ -1,10 +1,12 @@
 {
     "java.project.sourcePaths": [
         "src",
-        "3. Data Structures and Algorithms",
-        "2. Object-oriented Programming Principles",
-        "1. Introduction",
-        "4. My Projects"
+        "1. The Java Language",
+        "2. Classes in Java",
+        "3. Core Ultilities",
+        "4. IO Facilities",
+        "5. Data Structures and Algorithms",
+        "6. Network Programming",
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [

@@ -82,48 +82,63 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - So sánh Java với một số ngôn ngữ lập trình khác: tính di động, tốc độ và an toàn
   - Quản lý động bộ nhớ
   - Khả năng phát hiện và xử lý lỗi
-- [**Introduction**](1.%20Introduction/)
-  - [HelloWorld](1.%20Introduction/HelloWorld.java)
-  - [HelloJava](1.%20Introduction/HelloJava.java)
-  - [DataTypes](1.%20Introduction/DataTypes.java)
-  - [Wrappers](1.%20Introduction/Wrappers.java)
-  - [Boxing](1.%20Introduction/Boxing.java)
-  - [Arrays](1.%20Introduction/Arrays.java)
-  - [ArgumentPassing](1.%20Introduction/ArgumentPassing.java)
-  - [MethodOverloading](1.%20Introduction/MethodOverloading.java)
-  - [ObjectsInJava](1.%20Introduction/ObjectsInJava.java)
-  - [ObjectCreation](1.%20Introduction/ObjectCreation.java)
-  - [ObjectDestruction](1.%20Introduction/ObjectDestruction.java)
-  - [ThisReference](1.%20Introduction/ThisReference.java)
+- [**The Java Language**](1.%20The%20Java%20Language/)
+  - [HelloWorld](1.%20The%20Java%20Language/HelloWorld.java)
+  - [HelloJava](1.%20The%20Java%20Language/HelloJava.java)
+  - [DataTypes](1.%20The%20Java%20Language/DataTypes.java)
+  - [Wrappers](1.%20The%20Java%20Language/Wrappers.java)
+  - [Boxing](1.%20The%20Java%20Language/Boxing.java)
+  - [Arrays](1.%20The%20Java%20Language/Arrays.java)
+  - [ArgumentPassing](1.%20The%20Java%20Language/ArgumentPassing.java)
+  - [MethodOverloading](1.%20The%20Java%20Language/MethodOverloading.java)
+  - [ObjectsInJava](1.%20The%20Java%20Language/ObjectsInJava.java)
+  - [ObjectCreation](1.%20The%20Java%20Language/ObjectCreation.java)
+  - [ObjectDestruction](1.%20The%20Java%20Language/ObjectDestruction.java)
+  - [ThisReference](1.%20The%20Java%20Language/ThisReference.java)
 
 </details>
 
 <details>
 
-<summary>Phần 2: Nguyên lý lập trình hướng đối tượng</summary>
+<summary>Phần 2: Làm việc với đối tượng và lớp trong Java</summary>
 
-- [**Object-oriented Programming Principles**](2.%20Object-oriented%20Programming%20Principles/)
-  - [Subclass](2.%20Object-oriented%20Programming%20Principles/Subclass.java)
-  - [Casting](2.%20Object-oriented%20Programming%20Principles/Casting.java)
-  - [SuperConstructor](2.%20Object-oriented%20Programming%20Principles/SuperConstructor.java)
-  - [Abstract](2.%20Object-oriented%20Programming%20Principles/Abstract.java)
-  - [Interface](2.%20Object-oriented%20Programming%20Principles/Interface.java)
-
-</details>
-
-<details>
-
-<summary>Phần 3: Cấu trúc dữ liệu và thuật toán</summary>
-
-- [**Data Structures and Algorithms**](3.%20Data%20Structures%20and%20Algorithms/)
+- [**Classes in Java**](2.%20Classes%20in%20Java/)
+  - [Subclass](2.%20Classes%20in%20Java/Subclass.java)
+  - [Casting](2.%20Classes%20in%20Java/Casting.java)
+  - [SuperConstructor](2.%20Classes%20in%20Java/SuperConstructor.java)
+  - [Abstract](2.%20Classes%20in%20Java/Abstract.java)
+  - [Interface](2.%20Classes%20in%20Java/Interface.java)
+  - [Callback](2.%20Classes%20in%20Java/Callback.java)
+  - [InterfaceVariables](2.%20Classes%20in%20Java/InterfaceVariables.java)
+  - [SubInterface](2.%20Classes%20in%20Java/SubInterface.java)
+  - [NestedClass](2.%20Classes%20in%20Java/NestedClass.java)
+  - [InnerClass](2.%20Classes%20in%20Java/InnerClass.java)
 
 </details>
 
 <details>
 
-<summary>Phần 4: Các dự án của tôi</summary>
+<summary>Phần 3: Công cụ cơ bản và thiết yếu của Java</summary>
 
-- [**TicTacToe**](4.%20My%20Projects/TicTacToe.java)
+- [**Core Ultilities**](3.%20Core%20Ultilities/)
+
+</details>
+
+<details>
+
+<summary>Phần 4: Tiện ích vào - ra với Java</summary>
+
+</details>
+
+<details>
+
+<summary>Phần 5: Cấu trúc dữ liệu và Thuật toán bằng Java</summary>
+
+</details>
+
+<details>
+
+<summary>Phần 6: Lập trình mạng sử dụng Java</summary>
 
 </details>
 
@@ -133,6 +148,8 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 - [**Tài liệu tham khảo**](#tài-liệu-tham-khảo)
 - [**Tải xuống tài liệu tham khảo**](documents)
+- [**Dự án của tôi**](.projects)
+  - [**TicTacToe**](.projects/TicTacToe.java)
 
 </details>
 
