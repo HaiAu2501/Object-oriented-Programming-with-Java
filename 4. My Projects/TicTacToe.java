@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class TicTacToe extends JFrame implements ActionListener {
     private JButton[][] buttons = new JButton[3][3];
-    private JTextField inputField = new JTextField();
+    private JLabel statusLabel = new JLabel("X's turn", SwingConstants.CENTER);
     private char currentPlayerMark = 'X';
     private Queue<Point> xMoves = new LinkedList<>();
     private Queue<Point> oMoves = new LinkedList<>();
@@ -22,10 +22,8 @@ public class TicTacToe extends JFrame implements ActionListener {
         initializeButtons(boardPanel);
         add(boardPanel, BorderLayout.CENTER);
 
-        inputField.setHorizontalAlignment(JTextField.CENTER);
-        inputField.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 20));
-        inputField.addActionListener(this);
-        add(inputField, BorderLayout.SOUTH);
+        statusLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 20));
+        add(statusLabel, BorderLayout.NORTH);
     }
 
     private void initializeButtons(JPanel boardPanel) {
@@ -34,43 +32,49 @@ public class TicTacToe extends JFrame implements ActionListener {
                 buttons[i][j] = new JButton();
                 buttons[i][j].setFont(new Font(Font.SANS_SERIF, Font.BOLD, 100));
                 buttons[i][j].setFocusPainted(false);
-                buttons[i][j].setEnabled(false);
+                buttons[i][j].addActionListener(this);
                 boardPanel.add(buttons[i][j]);
             }
         }
     }
 
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == inputField) {
-            String text = inputField.getText();
-            if (!text.matches("\\d") || text.isEmpty())
-                return;
-            int pos = Integer.parseInt(text);
-            int row = 3 - (pos - 1) / 3 - 1;
-            int col = (pos - 1) % 3;
-            if (buttons[row][col].getText().equals("")) {
-                buttons[row][col].setText(String.valueOf(currentPlayerMark));
-                trackMove(currentPlayerMark, row, col);
-                manageFourMarks(currentPlayerMark);
+        JButton buttonClicked = (JButton) e.getSource();
+        if (buttonClicked.getText().equals("")) {
+            buttonClicked.setText(String.valueOf(currentPlayerMark));
+            Point move = findPosition(buttonClicked);
+            trackMove(currentPlayerMark, move);
+            manageFourMarks(currentPlayerMark);
 
-                if (checkForWin()) {
-                    JOptionPane.showMessageDialog(null, "Player " + currentPlayerMark + " wins!");
-                    resetButtons();
-                } else if (isBoardFull()) {
-                    JOptionPane.showMessageDialog(null, "Draw!");
-                    resetButtons();
-                }
+            if (checkForWin()) {
+                JOptionPane.showMessageDialog(null, "Player " + currentPlayerMark + " wins!");
+                resetButtons();
+            } else if (isBoardFull()) {
+                JOptionPane.showMessageDialog(null, "Draw!");
+                resetButtons();
+            } else {
                 currentPlayerMark = (currentPlayerMark == 'X') ? 'O' : 'X';
+                statusLabel.setText(currentPlayerMark + "'s turn");
             }
-            inputField.setText("");
         }
     }
 
-    private void trackMove(char player, int row, int col) {
+    private Point findPosition(JButton button) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (buttons[i][j] == button) {
+                    return new Point(i, j);
+                }
+            }
+        }
+        return null; // Should never happen
+    }
+
+    private void trackMove(char player, Point move) {
         if (player == 'X') {
-            xMoves.add(new Point(row, col));
+            xMoves.add(move);
         } else {
-            oMoves.add(new Point(row, col));
+            oMoves.add(move);
         }
     }
 
