@@ -1,8 +1,11 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "5. Data Structures and Algorithms",
+        "3. Core Ultilities",
         "2. Classes in Java",
-        "3. Core Ultilities"
+        "1. The Java Language",
+        ".projects"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
