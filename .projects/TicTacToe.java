@@ -8,7 +8,11 @@ import java.util.Queue;
 public class TicTacToe extends JFrame implements ActionListener {
     private JButton[][] buttons = new JButton[3][3];
     private JLabel statusLabel = new JLabel("X's turn", SwingConstants.CENTER);
+    private JLabel scoreLabel = new JLabel("Player 1: 0 | Player 2: 0", SwingConstants.CENTER);
     private char currentPlayerMark = 'X';
+    private int player1Score = 0;
+    private int player2Score = 0;
+    private boolean isPlayer1X = true; // Track who is playing 'X'
     private Queue<Point> xMoves = new LinkedList<>();
     private Queue<Point> oMoves = new LinkedList<>();
 
@@ -22,8 +26,12 @@ public class TicTacToe extends JFrame implements ActionListener {
         initializeButtons(boardPanel);
         add(boardPanel, BorderLayout.CENTER);
 
+        JPanel statusPanel = new JPanel(new GridLayout(2, 1));
         statusLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 20));
-        add(statusLabel, BorderLayout.NORTH);
+        scoreLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
+        statusPanel.add(statusLabel);
+        statusPanel.add(scoreLabel);
+        add(statusPanel, BorderLayout.NORTH);
     }
 
     private void initializeButtons(JPanel boardPanel) {
@@ -32,6 +40,8 @@ public class TicTacToe extends JFrame implements ActionListener {
                 buttons[i][j] = new JButton();
                 buttons[i][j].setFont(new Font(Font.SANS_SERIF, Font.BOLD, 100));
                 buttons[i][j].setFocusPainted(false);
+                buttons[i][j].setBackground(Color.WHITE); // Set background color
+                buttons[i][j].setOpaque(true);
                 buttons[i][j].addActionListener(this);
                 boardPanel.add(buttons[i][j]);
             }
@@ -42,16 +52,20 @@ public class TicTacToe extends JFrame implements ActionListener {
         JButton buttonClicked = (JButton) e.getSource();
         if (buttonClicked.getText().equals("")) {
             buttonClicked.setText(String.valueOf(currentPlayerMark));
+            buttonClicked.setForeground(currentPlayerMark == 'X' ? Color.RED : Color.BLUE);
             Point move = findPosition(buttonClicked);
             trackMove(currentPlayerMark, move);
             manageFourMarks(currentPlayerMark);
 
             if (checkForWin()) {
                 JOptionPane.showMessageDialog(null, "Player " + currentPlayerMark + " wins!");
+                updateScore(currentPlayerMark);
                 resetButtons();
+                switchPlayers();
             } else if (isBoardFull()) {
                 JOptionPane.showMessageDialog(null, "Draw!");
                 resetButtons();
+                switchPlayers();
             } else {
                 currentPlayerMark = (currentPlayerMark == 'X') ? 'O' : 'X';
                 statusLabel.setText(currentPlayerMark + "'s turn");
@@ -97,6 +111,19 @@ public class TicTacToe extends JFrame implements ActionListener {
         return true;
     }
 
+    private void switchPlayers() {
+        isPlayer1X = !isPlayer1X;
+    }
+
+    private void updateScore(char winner) {
+        if ((winner == 'X' && isPlayer1X) || (winner == 'O' && !isPlayer1X)) {
+            player1Score++;
+        } else {
+            player2Score++;
+        }
+        scoreLabel.setText("Player 1: " + player1Score + " | Player 2: " + player2Score);
+    }
+
     private boolean checkForWin() {
         return checkRowsForWin() || checkColumnsForWin() || checkDiagonalsForWin();
     }
@@ -133,6 +160,8 @@ public class TicTacToe extends JFrame implements ActionListener {
                 buttons[i][j].setText("");
             }
         }
+        currentPlayerMark = 'X'; // 'X' luôn là người chơi đầu tiên
+        statusLabel.setText(currentPlayerMark + "'s turn");
         xMoves.clear();
         oMoves.clear();
     }

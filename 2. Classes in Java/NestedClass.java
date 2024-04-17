@@ -6,14 +6,18 @@ import java.util.Map;
 // Lớp chồng nhau (nested class) là một lớp được định nghĩa bên trong một lớp khác.
 
 // Ví dụ:
+// ContactBook là danh bạ điện thoại, bao gồm danh sách các liên hệ và các nhóm.
 class ContactBook {
     public List<Contact> contacts = new ArrayList<>();
     public Map<String, Group> groups = new HashMap<>();
 
+    // Lớp Contact đại diện cho một liên hệ trong danh bạ, gồm tên và số điện thoại.
     class Contact {
         private String name;
         private String phone;
 
+        // Là một lớp, Contact cũng có hàm khởi tạo.
+        // Dùng this để tham chiếu đến biến của lớp Contact.
         public Contact(String name, String phone) {
             this.name = name;
             this.phone = phone;
@@ -24,6 +28,8 @@ class ContactBook {
         }
     }
 
+    // Lớp Group đại diện cho một nhóm trong danh bạ, bao gồm tên nhóm và danh sách
+    // các thành viên.
     static class Group {
         String name;
         List<String> members = new ArrayList<>();
