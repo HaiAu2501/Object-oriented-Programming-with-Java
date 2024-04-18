@@ -115,11 +115,19 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [Callback](2.%20Classes%20in%20Java/Callback.java)
   - [InterfaceVariables](2.%20Classes%20in%20Java/InterfaceVariables.java)
   - [SubInterface](2.%20Classes%20in%20Java/SubInterface.java)
+- **Inner Classes**
   - [NestedClass](2.%20Classes%20in%20Java/NestedClass.java)
   - [InnerClass](2.%20Classes%20in%20Java/InnerClass.java)
   - [AdapterClass](2.%20Classes%20in%20Java/AdapterClass.java)
   - [WithinMethods](2.%20Classes%20in%20Java/WithinMethods.java)
   - [StaticInnerClass](2.%20Classes%20in%20Java/StaticInnerClass.java)
+  - [AnonymousInnerClass](2.%20Classes%20in%20Java/AnonymousInnerClass.java)
+  - [EventHandling](2.%20Classes%20in%20Java/EventHandling.java)
+- **The Object Class**
+  - [TheObjectClass](2.%20Classes%20in%20Java/TheObjectClass.java)
+  - [Equals](2.%20Classes%20in%20Java/Equals.java)
+  - Hashcode
+  - Clone
 
 </details>
 
