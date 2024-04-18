@@ -15,28 +15,28 @@
  */
 
 // Ví dụ về phương thức toString():
-class Student {
+class Dog {
     private String name;
-    private int age;
+    private String breed;
 
-    public Student(String name, int age) {
+    public Dog(String name, String breed) {
         this.name = name;
-        this.age = age;
+        this.breed = breed;
     }
 
     // Ghi đè phương thức toString() để trả về thông tin của đối tượng.
     @Override
     public String toString() {
-        return "Student [name=" + name + ", age=" + age + "]";
+        return "Dog [name=" + name + ", breed=" + breed + "]";
     }
 }
 
 @SuppressWarnings("unused")
-class Teacher {
+class Cat {
     private String name;
     private int age;
 
-    public Teacher(String name, int age) {
+    public Cat(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -44,8 +44,8 @@ class Teacher {
 
 public class TheObjectClass {
     public static void main(String[] args) {
-        Student student = new Student("Alice", 20);
-        System.out.println(student.toString());
+        Dog dog = new Dog("Bobby", "Golden Retriever");
+        System.out.println(dog.toString());
 
         // Lớp Object cung cấp phương thức toString() mặc định.
         // Khi không ghi đè phương thức này,
@@ -53,7 +53,7 @@ public class TheObjectClass {
         Object obj = new Object();
         System.out.println(obj.toString());
 
-        Teacher teacher = new Teacher("Bob", 30);
-        System.out.println(teacher.toString());
+        Cat cat = new Cat("Tom", 3);
+        System.out.println(cat.toString());
     }
 }
