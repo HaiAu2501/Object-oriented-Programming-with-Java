@@ -72,7 +72,9 @@ Java là một trong những ngôn ngữ lập trình phổ biến nhất đư�
 
 ## Mục lục
 
-Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tuân theo nguyên tắc sắp xếp được đề cập sau đây. Hãy đọc các mục theo đúng quy tắc từ trên xuống dưới, những phần đầu tiên sẽ là cơ sở của những nội dung tiếp theo. Riêng phần *Phụ lục* bạn có thể tham khảo bất cứ lúc nào, nó chứa một số cuốn sách tôi sử dụng cho việc thiết kế nên kho lưu trữ này.<br/>
+Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tuân theo nguyên tắc sắp xếp được đề cập sau đây. Hãy đọc các mục theo đúng quy tắc từ trên xuống dưới, những phần đầu tiên sẽ là cơ sở của những nội dung tiếp theo. Riêng phần *Phụ lục* bạn có thể tham khảo bất cứ lúc nào, nó chứa một số cuốn sách tôi sử dụng cho việc thiết kế nên kho lưu trữ này.
+
+> Để đồng bộ và dễ kiểm soát, lớp chứa phương thức main để thực thi mã được đặt tên giống như nội dung bài học. Các lớp khác trong bài học để minh họa. Chẳng hạn, bài học về Interface nằm trong `Interface.java` có các lớp: `Movable`, `Trackable`, `Drone`, `Interface` thì các lớp `Movable`, `Trackable`, `Drone` có tác dụng diễn giải cho kiến thức bài học, còn lớp `Interface` để thực thi mã từ các lớp trước nó.
 
 <details>
 <summary>Phần 1: Giới thiệu</summary>
@@ -115,6 +117,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [SubInterface](2.%20Classes%20in%20Java/SubInterface.java)
   - [NestedClass](2.%20Classes%20in%20Java/NestedClass.java)
   - [InnerClass](2.%20Classes%20in%20Java/InnerClass.java)
+  - [AdapterClass](2.%20Classes%20in%20Java/AdapterClass.java)
 
 </details>
 
