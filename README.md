@@ -118,6 +118,8 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [NestedClass](2.%20Classes%20in%20Java/NestedClass.java)
   - [InnerClass](2.%20Classes%20in%20Java/InnerClass.java)
   - [AdapterClass](2.%20Classes%20in%20Java/AdapterClass.java)
+  - [WithinMethods](2.%20Classes%20in%20Java/WithinMethods.java)
+  - [StaticInnerClass](2.%20Classes%20in%20Java/StaticInnerClass.java)
 
 </details>
 
