@@ -11,58 +11,58 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
-// Lớp Book chứa thông tin về một cuốn sách (tên sách, tác giả)
-class Book {
-    String title;
-    String author;
+// Lớp Friend chứa thông tin về một người bạn, bao gồm tên và địa chỉ.
+class Friend {
+    private String name;
+    private String address;
 
-    Book(String title, String author) {
-        this.title = title;
-        this.author = author;
+    public Friend(String name, String address) {
+        this.name = name;
+        this.address = address;
     }
 
     @Override
     public String toString() {
-        return title + " by " + author;
+        return "Friend [name=" + name + ", address=" + address + "]";
     }
 }
 
-// Lớp BookList chứa một danh sách các cuốn sách.
-class BookList {
-    private List<Book> books = new ArrayList<>();
+// Lớp FriendList chứa danh sách các người bạn.
+class FriendList {
+    private List<Friend> friends = new ArrayList<>();
 
-    public void addBook(Book book) {
-        books.add(book);
+    public void addFriend(Friend friend) {
+        friends.add(friend);
     }
 
     public int getSize() {
-        return books.size();
+        return friends.size();
     }
 
-    // Nội lớp cung cấp iterator để duyệt qua danh sách các cuốn sách.
-    public class BookIterator implements Iterator<Book> {
+    // Nội lớp cung cấp iterator để duyệt qua danh sách các người bạn.
+    public class FriendIterator implements Iterator<Friend> {
         private int index = 0;
 
         @Override
         public boolean hasNext() {
-            return index < books.size();
+            return index < friends.size();
         }
 
         @Override
-        public Book next() {
-            return books.get(index++);
+        public Friend next() {
+            return friends.get(index++);
         }
     }
 
-    public BookIterator getIterator() {
-        return new BookIterator();
+    public FriendIterator getIterator() {
+        return new FriendIterator();
     }
 
     // Sử dụng nội lớp vô danh để tạo một Iterator mới mà không cần phải tạo lớp
     // mới.
-    public Iterator<Book> getReverseIterator() {
-        return new Iterator<Book>() {
-            private int index = books.size() - 1;
+    public Iterator<Friend> getReverseIterator() {
+        return new Iterator<Friend>() {
+            private int index = friends.size() - 1;
 
             @Override
             public boolean hasNext() {
@@ -70,8 +70,8 @@ class BookList {
             }
 
             @Override
-            public Book next() {
-                return books.get(index--);
+            public Friend next() {
+                return friends.get(index--);
             }
         };
         // Đây là một nội lớp vô danh, không có tên, được khai báo và khởi tạo ngay
@@ -81,16 +81,17 @@ class BookList {
 
 public class AnonymousInnerClass {
     public static void main(String[] args) {
-        BookList myList = new BookList();
+        FriendList myList = new FriendList();
 
-        myList.addBook(new Book("The Alchemist", "Paulo Coelho"));
-        myList.addBook(new Book("The Little Prince", "Antoine de Saint-Exupéry"));
-        myList.addBook(new Book("The Da Vinci Code", "Dan Brown"));
+        // Thêm các người bạn vào danh sách.
+        myList.addFriend(new Friend("Alice", "USA"));
+        myList.addFriend(new Friend("Bob", "UK"));
+        myList.addFriend(new Friend("Carol", "France"));
 
         System.out.println("--Book list:");
 
         // Sử dụng Iterator để duyệt qua danh sách các cuốn sách.
-        BookList.BookIterator iterator = myList.getIterator();
+        Iterator<Friend> iterator = myList.getIterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
@@ -98,7 +99,7 @@ public class AnonymousInnerClass {
         System.out.println("\n--Book list in reverse order:");
 
         // Sử dụng Iterator để duyệt qua danh sách các cuốn sách theo thứ tự ngược lại.
-        Iterator<Book> reverseIterator = myList.getReverseIterator();
+        Iterator<Friend> reverseIterator = myList.getReverseIterator();
         while (reverseIterator.hasNext()) {
             System.out.println(reverseIterator.next());
         }

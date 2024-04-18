@@ -15,19 +15,20 @@
  */
 
 // Ví dụ về phương thức toString():
-class Dog {
+class Pet {
     private String name;
-    private String breed;
+    private String species;
+    private int age;
 
-    public Dog(String name, String breed) {
+    public Pet(String name, String species, int age) {
         this.name = name;
-        this.breed = breed;
+        this.species = species;
+        this.age = age;
     }
 
-    // Ghi đè phương thức toString() để trả về thông tin của đối tượng.
     @Override
     public String toString() {
-        return "Dog [name=" + name + ", breed=" + breed + "]";
+        return "Pet [name=" + name + ", species=" + species + ", age=" + age + "]";
     }
 }
 
@@ -44,8 +45,8 @@ class Cat {
 
 public class TheObjectClass {
     public static void main(String[] args) {
-        Dog dog = new Dog("Bobby", "Golden Retriever");
-        System.out.println(dog.toString());
+        Pet pet = new Pet("Tom", "Cat", 3);
+        System.out.println(pet.toString());
 
         // Lớp Object cung cấp phương thức toString() mặc định.
         // Khi không ghi đè phương thức này,
