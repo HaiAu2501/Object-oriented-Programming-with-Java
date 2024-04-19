@@ -166,7 +166,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <summary>Phần 5: Cấu trúc dữ liệu và Thuật toán bằng Java</summary>
 
-> Mục này gần như cùng thứ tự với kho lưu trữ [**Cấu trúc dữ liệu và thuật toán sử dụng C/C++**](https://github.com/HaiAu2501/Data-Structures-and-Algorithms-using-C), chỉ khác là được viết bằng ngôn ngữ Java. Sẽ có một số khác biệt giữa hai ngôn ngữ, bạn đọc có thể tự đối chiếu chúng.
+> Mục này gần như cùng thứ tự với kho lưu trữ của tôi: [**Cấu trúc dữ liệu và Thuật toán sử dụng C/C++**](https://github.com/HaiAu2501/Data-Structures-and-Algorithms-using-C), chỉ khác là được viết bằng ngôn ngữ Java. Sẽ có một số khác biệt giữa hai ngôn ngữ, bạn đọc có thể tự đối chiếu chúng.
 
 - **Tuần 1: Làm quen với Java**
   - [SumTwoInts](5.%20Data%20Structures%20and%20Algorithms/SumTwoInts.java)
