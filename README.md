@@ -126,8 +126,10 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 - **The Object Class**
   - [TheObjectClass](2.%20Classes%20in%20Java/TheObjectClass.java)
   - [Equals](2.%20Classes%20in%20Java/Equals.java)
-  - Hashcode
-  - Clone
+  - [Hashcode](2.%20Classes%20in%20Java/Hashcode.java)
+  - [Clone](2.%20Classes%20in%20Java/Clone.java)
+- **The Class Class**
+  - [TheClassClass](2.%20Classes%20in%20Java/TheClassClass.java)
 
 </details>
 
@@ -176,6 +178,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <summary>Phụ lục</summary>
 
+- [**Chỉ định truy cập**](#chỉ-định-truy-cập)
 - [**Tài liệu tham khảo**](#tài-liệu-tham-khảo)
 - [**Tải xuống tài liệu tham khảo**](documents)
 - [**Dự án của tôi**](.projects)
@@ -238,6 +241,72 @@ Java không sử dụng con trỏ theo nghĩa truyền thống mà thay vào đ�
 Java được thiết kế để xử lý lỗi một cách thông minh và hiệu quả, nhờ vào cơ chế quản lý ngoại lệ mạnh mẽ. Trong Java, các lỗi không chỉ được bắt và xử lý tại một nơi cụ thể trong chương trình thông qua khối mã "catch", mà còn được đóng gói thành các đối tượng ngoại lệ. Mỗi đối tượng này mang thông tin về nguyên nhân gây ra lỗi, giúp lập trình viên dễ dàng hiểu và xử lý lỗi một cách chính xác. Trình biên dịch Java đòi hỏi phương thức phải tuyên bố các ngoại lệ mà nó có thể phát sinh, hoặc là phải tự xử lý chúng ngay lập tức. Điều này giúp đưa thông tin lỗi lên cùng mức độ quan trọng với các thông tin khác như kiểu dữ liệu trả về hay tham số của phương thức. Qua đó, khi lập trình, bạn có thể dự đoán và chuẩn bị sẵn sàng cho các tình huống có thể xảy ra, đảm bảo rằng ứng dụng của bạn sẽ hoạt động ổn định và an toàn hơn.
 
 </details>
+
+## Chỉ định truy cập
+
+<center>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" colspan="2">Chỉ định truy cập</th>
+    <th class="tg-c3ow">public</th>
+    <th class="tg-c3ow">protected</th>
+    <th class="tg-c3ow">default</th>
+    <th class="tg-c3ow">private</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-lboi" rowspan="3">Cùng package<br></td>
+    <td class="tg-0pky">Bên trong lớp</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lớp con</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-7btt">Không</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lớp khác</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-7btt">Không</td>
+  </tr>
+  <tr>
+    <td class="tg-lboi" rowspan="2">Khác package</td>
+    <td class="tg-0pky">Lớp con</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-7btt">Không</td>
+    <td class="tg-7btt">Không</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Lớp khác</td>
+    <td class="tg-c3ow">Có</td>
+    <td class="tg-7btt">Không</td>
+    <td class="tg-7btt">Không</td>
+    <td class="tg-7btt">Không</td>
+  </tr>
+</tbody>
+</table>
+</center>
 
 ## Tài liệu tham khảo
 

@@ -8,63 +8,61 @@
 
 // Ví dụ về equals() mặc định:
 @SuppressWarnings("unused")
-class Student {
+class Footballer {
     private String name;
     private int age;
 
-    public Student(String name, int age) {
+    public Footballer(String name, int age) {
         this.name = name;
         this.age = age;
     }
 }
 
 // Nếu ghi đè phương thức equals() để so sánh dữ liệu của đối tượng:
-class Teacher {
+class Coach {
     private String name;
     private int age;
 
-    public Teacher(String name, int age) {
+    public Coach(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    // Ghi đè phương thức equals() để so sánh dữ liệu của đối tượng.
     @Override
     public boolean equals(Object obj) {
-        // Nếu hai đối tượng cùng tham chiếu đến cùng một vùng nhớ.
-        if (this == obj) {
-            return true;
+        // Kiểm tra xem obj có phải là một instance của lớp Coach hay không.
+        if (obj instanceof Coach) {
+            // Ép kiểu obj về lớp Coach.
+            Coach coach = (Coach) obj;
+            // So sánh dữ liệu của hai đối tượng.
+            return (name.equals(coach.name) && age == coach.age);
         }
-
-        // Nếu obj là null hoặc không phải là một instance của lớp Teacher.
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-
-        // Ép kiểu obj về lớp Teacher.
-        Teacher teacher = (Teacher) obj;
-        return age == teacher.age && name.equals(teacher.name);
+        return false;
     }
 }
 
 @SuppressWarnings("unlikely-arg-type")
 public class Equals {
     public static void main(String[] args) {
-        Student student1 = new Student("Alice", 20);
-        Student student2 = new Student("Alice", 20);
+        Footballer footballer1 = new Footballer("Messi", 34);
+        Footballer footballer2 = new Footballer("Messi", 34);
 
         // So sánh hai đối tượng sử dụng equals() mặc định.
         // Kết quả sẽ là false vì không ghi đè phương thức equals().
-        System.out.println(student1.equals(student2));
+        System.out.println(footballer1.equals(footballer2)); // false
 
         // So sánh hai đối tượng sử dụng equals() đã được ghi đè.
         // Kết quả sẽ là true vì dữ liệu của hai đối tượng giống nhau.
-        Teacher teacher1 = new Teacher("Bob", 30);
-        Teacher teacher2 = new Teacher("Bob", 30);
-        System.out.println(teacher1.equals(teacher2));
+        Coach coach1 = new Coach("Klopp", 54);
+        Coach coach2 = new Coach("Klopp", 54);
+        System.out.println(coach1.equals(coach2)); // true
 
         // Nếu so sánh giữa hai đối tượng khác nhau.
-        System.out.println(teacher1.equals(student1));
+        System.out.println(coach1.equals(footballer1)); // false
         // -> false vì student1 không phải là một instance của lớp Teacher.
+
+        // So sánh hai đối tượng sử dụng toán tử ==.
+        // Kết quả sẽ là false vì toán tử == so sánh địa chỉ bộ nhớ của hai đối tượng.
+        System.out.println(footballer1 == footballer2); // false
     }
 }
