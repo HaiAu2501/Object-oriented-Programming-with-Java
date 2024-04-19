@@ -166,6 +166,12 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <summary>Phần 5: Cấu trúc dữ liệu và Thuật toán bằng Java</summary>
 
+- **Tuần 1: Làm quen với Java**
+  - [SumTwoInts](5.%20Data%20Structures%20and%20Algorithms/SumTwoInts.java)
+  - [SumArray]
+  - [MaxSubarray]
+- **Tuần 2: Thuật toán đệ quy**
+
 </details>
 
 <details>
