@@ -130,6 +130,7 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - [Clone](2.%20Classes%20in%20Java/Clone.java)
 - **The Class Class**
   - [TheClassClass](2.%20Classes%20in%20Java/TheClassClass.java)
+  - [Reflection](2.%20Classes%20in%20Java/Reflection.java)
 
 </details>
 
