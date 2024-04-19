@@ -166,11 +166,16 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
 
 <summary>Phần 5: Cấu trúc dữ liệu và Thuật toán bằng Java</summary>
 
+> Mục này gần như cùng thứ tự với kho lưu trữ [**Cấu trúc dữ liệu và thuật toán sử dụng C/C++**](https://github.com/HaiAu2501/Data-Structures-and-Algorithms-using-C), chỉ khác là được viết bằng ngôn ngữ Java. Sẽ có một số khác biệt giữa hai ngôn ngữ, bạn đọc có thể tự đối chiếu chúng.
+
 - **Tuần 1: Làm quen với Java**
   - [SumTwoInts](5.%20Data%20Structures%20and%20Algorithms/SumTwoInts.java)
-  - [SumArray]
-  - [MaxSubarray]
-- **Tuần 2: Thuật toán đệ quy**
+  - [SumOfArray](5.%20Data%20Structures%20and%20Algorithms/SumOfArray.java)
+  - [MaxSubarray](5.%20Data%20Structures%20and%20Algorithms/MaxSubarray.java)
+- **Tuần 2: Thuật toán Đệ quy & Thuật toán Quay lui**
+- **Tuần 3: Thuật toán Nhánh cận & Thuật toán Tham lam**
+- **Tuần 4: Thuật toán Quy hoạch động**
+- **Tuần 5: Ngăn xếp & Hàng đợi**
 
 </details>
 

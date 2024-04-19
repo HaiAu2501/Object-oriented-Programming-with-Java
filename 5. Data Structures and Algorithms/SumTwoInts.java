@@ -30,45 +30,49 @@ public class SumTwoInts {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the first number: ");
+        System.out.println("--Using BigInteger class");
         BigInteger num1 = scanner.nextBigInteger();
-
-        System.out.println("Enter the second number: ");
         BigInteger num2 = scanner.nextBigInteger();
 
         // Cộng hai số nguyên lớn
         BigInteger sum = num1.add(num2);
 
-        System.out.println("Sum of two numbers: " + sum);
+        System.out.println("Sum: " + sum);
+
+        System.out.println("--Using SumByString");
+        String num1Str = scanner.next();
+        String num2Str = scanner.next();
+
+        SumByString sumByString = new SumByString(num1Str, num2Str);
+        System.out.println("Sum: " + sumByString.add());
 
         scanner.close();
     }
 }
 
-// Ngoài ra, có 1 số cách khác để cộng 2 số nguyên lớn:
-
-// Cách 1: Sử dụng phép cộng thông thường trên chuỗi số nguyên.
+// Sử dụng phép cộng thông thường số nguyên (nhập vào duới dạng chuỗi kí tự).
 /*
- * - Đọc 2 số nguyên a, b vào 2 chuỗi số.
+ * - Đọc 2 số nguyên a, b vào 2 chuỗi kí tự.
  * - Thực hiện phép cộng từ hàng đơn vị đến hàng cao nhất.
  */
 class SumByString {
     private String num1;
     private String num2;
 
-    public SumByString(long a, long b) {
-        this.num1 = String.valueOf(a);
-        this.num2 = String.valueOf(b);
+    public SumByString(String num1, String num2) {
+        this.num1 = num1;
+        this.num2 = num2;
     }
 
     public String add() {
         StringBuilder result = new StringBuilder();
-        int carry = 0;
-        int i = num1.length() - 1;
+        int carry = 0; // Số nhớ
+        int i = num1.length() - 1; // Vị trí hàng đơn vị của số thứ nhất, là (length - 1) vì index bắt đầu từ 0
         int j = num2.length() - 1;
 
         while (i >= 0 || j >= 0) {
             int sum = carry;
+            // Cộng từ hàng đơn vị đến hàng cao nhất
             if (i >= 0) {
                 sum += num1.charAt(i--) - '0';
             }
