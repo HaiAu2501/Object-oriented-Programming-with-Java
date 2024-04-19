@@ -244,7 +244,7 @@ Java được thiết kế để xử lý lỗi một cách thông minh và hi�
 
 ## Chỉ định truy cập
 
-<center>
+<div align="center">
 <table class="tg">
 <thead>
   <tr>
@@ -295,7 +295,7 @@ Java được thiết kế để xử lý lỗi một cách thông minh và hi�
   </tr>
 </tbody>
 </table>
-</center>
+</div>
 
 ## Tài liệu tham khảo
 
