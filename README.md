@@ -84,6 +84,8 @@ Trong khi sử dụng kho lưu trữ này cho việc học tập, bạn nên tu�
   - So sánh Java với một số ngôn ngữ lập trình khác: tính di động, tốc độ và an toàn
   - Quản lý động bộ nhớ
   - Khả năng phát hiện và xử lý lỗi
+- [**Naming Convention**](#quy-ước-định-danh)
+- [**Unified Modeling Language**](#ngôn-ngữ-mô-hình-hóa-thống-nhất)
 - [**The Java Language**](1.%20The%20Java%20Language/)
   - [HelloWorld](1.%20The%20Java%20Language/HelloWorld.java)
   - [HelloJava](1.%20The%20Java%20Language/HelloJava.java)
@@ -257,6 +259,106 @@ Java được thiết kế để xử lý lỗi một cách thông minh và hi�
 
 </details>
 
+## Quy ước định danh
+
+Trong lập trình và phát triển phần mềm, **quy ước định danh** (naming convention) là một tập hợp các quy tắc cho việc chọn tên các biến, hàm, lớp, và các đối tượng khác trong mã nguồn. Quy ước định danh giúp làm cho mã nguồn dễ đọc, dễ hiểu và dễ bảo trì hơn. Kho lưu trữ của tôi tuân thủ nghiêm ngặt quy ước này, được đề cập dưới đây.
+
+<details>
+
+<summary>Quy ước định danh</summary>
+<ol>
+
+<li><b>Lớp (Class) và Giao diện (Interface):</b></li>
+
+- *Lớp:* Tên lớp luôn bắt đầu bằng chữ cái in hoa (PascalCase). Nếu tên lớp bao gồm nhiều từ, mỗi từ cũng phải bắt đầu bằng chữ cái in hoa. Ví dụ: `Student`, `Car`, `ColorChooser`.
+
+- *Giao diện:* Giống như class, tên interface cũng sử dụng PascalCase. Thường thì tên interface sẽ bắt đầu bằng các chữ cái viết hoa như `I` hoặc sử dụng các hậu tố/suffix như `able` hoặc `ible` để mô tả tính năng, chẳng hạn như `Runnable`, `Accessible`.
+
+<li><b>Phương thức (Method)/Hàm (Function) và Biến (Variable):</b></li>
+
+- Tên phương thức luôn bắt đầu bằng chữ thường và theo sau là camelCase. Tên phương thức thường là các động từ hoặc cụm động từ mô tả hành động mà phương thức đó thực hiện. Ví dụ: `getName()`, `calculateTotalWidth()`.
+
+- Tên biến cũng nên bắt đầu bằng chữ thường và theo sau là camelCase. Tên biến nên rõ ràng và mô tả được giá trị mà chúng đại diện. Ví dụ: `height`, `numberOfStudents`.
+
+<li><b>Gói (Package)</b></li>
+
+- Tên gói nên được viết thường hoàn toàn để tránh xung đột với tên lớp và interface.
+
+</ol>
+
+Một ví dụ về lớp `Dog`:
+
+```java
+package com.example.animals;
+
+/**
+ * A generic Dog class that can be used as a base class for specific breeds.
+ */
+public class Dog {
+    private String name;
+    private int age;
+
+    /**
+     * Constructor for Dog class.
+     *
+     * @param name The name of the dog.
+     * @param age The age of the dog.
+     */
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    /**
+     * Returns the name of the dog.
+     *
+     * @return The name of the dog.
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Sets the name of the dog.
+     *
+     * @param name New name for the dog.
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Returns the age of the dog.
+     *
+     * @return The age of the dog.
+     */
+    public int getAge() {
+        return age;
+    }
+
+    /**
+     * Sets the age of the dog.
+     *
+     * @param age New age for the dog.
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /**
+     * Provides a string representation of the dog.
+     *
+     * @return A string describing the dog's details.
+     */
+    @Override
+    public String toString() {
+        return "Dog[name=" + name + ", age=" + age + "]";
+    }
+}
+```
+
+</details>
+
 ## Chỉ định truy cập
 
 <div align="center">
@@ -311,6 +413,8 @@ Java được thiết kế để xử lý lỗi một cách thông minh và hi�
 </tbody>
 </table>
 </div>
+
+## Ngôn ngữ mô hình hóa thống nhất
 
 ## Tài liệu tham khảo
 
