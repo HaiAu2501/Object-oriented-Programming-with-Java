@@ -32,8 +32,6 @@ Lập trình hướng đối tượng dựa trên 4 nguyên tắc cơ bản, đ�
 
 **1. Đóng gói** (Encapsulation): Đây là khái niệm che giấu chi tiết triển khai bên trong của đối tượng, ngăn người dùng trực tiếp truy cập vào dữ liệu bên trong. Đóng gói giúp bảo vệ dữ liệu và hành vi của đối tượng khỏi sự can thiệp không mong muốn và cung cấp một giao diện thống nhất để tương tác với đối tượng.
 
----
-
 <details>
 
 <summary>Đoạn mã minh họa</summary>
@@ -98,11 +96,7 @@ Trong ví dụ này, các biến `name`, `age`, và `salary` được đánh d�
 
 </details>
 
----
-
 **2. Kế thừa** (Inheritance): Kế thừa cho phép một lớp mới kế thừa các thuộc tính và phương thức từ một lớp đã có sẵn. Lớp mới này có thể bổ sung thêm hoặc sửa đổi các thành phần thừa kế để đáp ứng nhu cầu riêng của nó, giúp tái sử dụng và mở rộng mã nguồn một cách hiệu quả.
-
----
 
 <details>
 
@@ -179,13 +173,9 @@ public class Main {
 
 </details>
 
----
-
 **3. Đa hình** (Polymorphism): Đa hình là khả năng mà theo đó các lớp khác nhau có thể được sử dụng thông qua cùng một giao diện. Phương thức có thể được định nghĩa trong một lớp cơ sở và được thay thế bởi các phương thức có cùng tên trong các lớp dẫn xuất, cho phép các đối tượng được xử lý thông qua giao diện chung mà không cần biết kiểu dữ liệu cụ thể của chúng.
 
 Trong Java, tính đa hình được thể hiện thông qua việc ghi đè phương thức (method overriding) và nạp chồng phương thức (method overloading).
-
----
 
 <details>
 
@@ -316,13 +306,9 @@ public class TestPolymorphism {
 
 </details>
 
----
-
 **4. Trừu tượng hóa** (Abstraction): Trừu tượng hóa cho phép lập trình viên tập trung vào những gì một đối tượng làm mà không cần quan tâm đến cách thực hiện. Nó tạo ra một lớp cơ sở mô tả một giao diện tổng quát mà các lớp dẫn xuất sẽ thực thi, đơn giản hóa việc quản lý sự phức tạp của hệ thống.
 
 Trong Java, trừu tượng hóa có thể được thực hiện bằng hai cách:
-
----
 
 <details>
 
@@ -414,8 +400,6 @@ public class Main {
 
 </details>
 
----
-
 <details>
 
 <summary>Ưu điểm của lập trình hướng đối tượng</summary>
@@ -434,8 +418,6 @@ Lập trình hướng đối tượng mang lại nhiều ưu điểm vượt tr�
 - **Tính bảo mật**: Đóng gói không chỉ giúp ẩn đi chi tiết triển khai mà còn cung cấp một lớp bảo mật. Dữ liệu bên trong một đối tượng được bảo vệ khỏi sự truy cập trực tiếp từ bên ngoài, đảm bảo tính toàn vẹn và an toàn của dữ liệu.
 
 </details>
-
----
 
 <details>
 
