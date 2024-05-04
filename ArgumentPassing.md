@@ -32,7 +32,7 @@ Trong ví dụ này:
 
 <div align = "center">
 
-![Minh họa 4](..\images\04.png)
+![Minh họa 4](images\04.png)
 
 </div>
 
@@ -113,7 +113,7 @@ Chi tiết như sau:
 
 <div align = "center">
 
-![Minh họa 5](..\images\05.png)
+![Minh họa 5](images\05.png)
 
 </div>
 
