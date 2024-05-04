@@ -32,6 +32,8 @@ Lập trình hướng đối tượng dựa trên 4 nguyên tắc cơ bản, đ�
 
 **1. Đóng gói** (Encapsulation): Đây là khái niệm che giấu chi tiết triển khai bên trong của đối tượng, ngăn người dùng trực tiếp truy cập vào dữ liệu bên trong. Đóng gói giúp bảo vệ dữ liệu và hành vi của đối tượng khỏi sự can thiệp không mong muốn và cung cấp một giao diện thống nhất để tương tác với đối tượng.
 
+---
+
 <details>
 
 <summary>Đoạn mã minh họa</summary>
@@ -94,9 +96,13 @@ public class Main {
 
 Trong ví dụ này, các biến `name`, `age`, và `salary` được đánh dấu là `private`, điều này có nghĩa là chúng không thể được truy cập trực tiếp từ bên ngoài lớp `Employee`. Thay vào đó, các phương thức `getName()`, `getAge()`, `getSalary()`, `setName()`, `setAge()`, và `setSalary()` được cung cấp để truy cập và cập nhật giá trị của các biến này, đảm bảo tính đóng gói.
 
-</details><br/>
+</details>
+
+---
 
 **2. Kế thừa** (Inheritance): Kế thừa cho phép một lớp mới kế thừa các thuộc tính và phương thức từ một lớp đã có sẵn. Lớp mới này có thể bổ sung thêm hoặc sửa đổi các thành phần thừa kế để đáp ứng nhu cầu riêng của nó, giúp tái sử dụng và mở rộng mã nguồn một cách hiệu quả.
+
+---
 
 <details>
 
@@ -171,11 +177,15 @@ public class Main {
   - Lớp `Manager` sử dụng từ khóa `extends` để kế thừa từ lớp `Employee`. Constructor của `Manager` gọi `super(name, age)`; để khởi tạo các thuộc tính được kế thừa từ lớp `Employee`.
   - Phương thức `displayInfo()` được ghi đè trong lớp `Manager` để thêm thông tin về mức lương, đồng thời gọi phương thức `displayInfo()` của lớp cơ sở để hiển thị thông tin cơ bản.
 
-</details><br/>
+</details>
+
+---
 
 **3. Đa hình** (Polymorphism): Đa hình là khả năng mà theo đó các lớp khác nhau có thể được sử dụng thông qua cùng một giao diện. Phương thức có thể được định nghĩa trong một lớp cơ sở và được thay thế bởi các phương thức có cùng tên trong các lớp dẫn xuất, cho phép các đối tượng được xử lý thông qua giao diện chung mà không cần biết kiểu dữ liệu cụ thể của chúng.
 
 Trong Java, tính đa hình được thể hiện thông qua việc ghi đè phương thức (method overriding) và nạp chồng phương thức (method overloading).
+
+---
 
 <details>
 
@@ -306,9 +316,13 @@ public class TestPolymorphism {
 
 </details>
 
+---
+
 **4. Trừu tượng hóa** (Abstraction): Trừu tượng hóa cho phép lập trình viên tập trung vào những gì một đối tượng làm mà không cần quan tâm đến cách thực hiện. Nó tạo ra một lớp cơ sở mô tả một giao diện tổng quát mà các lớp dẫn xuất sẽ thực thi, đơn giản hóa việc quản lý sự phức tạp của hệ thống.
 
 Trong Java, trừu tượng hóa có thể được thực hiện bằng hai cách:
+
+---
 
 <details>
 
@@ -400,6 +414,8 @@ public class Main {
 
 </details>
 
+---
+
 <details>
 
 <summary>Ưu điểm của lập trình hướng đối tượng</summary>
@@ -419,6 +435,8 @@ Lập trình hướng đối tượng mang lại nhiều ưu điểm vượt tr�
 
 </details>
 
+---
+
 <details>
 
 <summary>Lý do bắt đầu học lập trình hướng đối tượng bằng Java</summary>
@@ -433,6 +451,8 @@ Java là một trong những ngôn ngữ lập trình phổ biến nhất đư�
 - **Java là ngôn ngữ độc lập nền tảng**, có thể chạy trên bất kỳ hệ điều hành nào có máy ảo Java (JVM). Điều này có nghĩa là các chương trình Java có thể phát triển và thực thi một cách nhất quán trên các nền tảng khác nhau mà không cần thay đổi mã. Sự linh hoạt này là lý tưởng cho môi trường học tập, nơi sinh viên và giáo viên có thể sử dụng nhiều loại phần cứng và phần mềm.
 
 </details>
+
+---
 
 ## Mục lục
 
