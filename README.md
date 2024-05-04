@@ -1063,7 +1063,7 @@ public class School implements Maintainable {
 }
 ```
 
-<details>
+</details>
 
 ## Tài liệu tham khảo
 
