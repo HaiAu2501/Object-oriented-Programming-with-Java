@@ -16,7 +16,7 @@
 </p>
 
 <p align = "center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&random=false&width=435&lines=Object-oriented+Programming+with+Java" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&random=false&width=450&lines=Object-oriented+Programming+with+Java" alt="Typing SVG" /></a>
 </p>
 
 Chào mừng bạn đến với kho lưu trữ **Lập trình hướng đối tượng với Java**! Nơi đây cung cấp một nguồn tài nguyên toàn diện để khám phá và học hỏi lập trình hướng đối tượng qua ngôn ngữ Java.
@@ -30,7 +30,7 @@ Chào mừng bạn đến với kho lưu trữ **Lập trình hướng đối t�
 
 Lập trình hướng đối tượng dựa trên 4 nguyên tắc cơ bản, đó là: Đóng gói, Kế thừa, Đa hình, và Trừu tượng hóa. Mỗi nguyên tắc này cung cấp một cách tiếp cận để giải quyết các vấn đề trong phát triển phần mềm và giúp quản lý mã nguồn một cách hiệu quả hơn.
 
-- **Đóng gói** (Encapsulation): Đây là khái niệm che giấu chi tiết triển khai bên trong của đối tượng, ngăn người dùng trực tiếp truy cập vào dữ liệu bên trong. Đóng gói giúp bảo vệ dữ liệu và hành vi của đối tượng khỏi sự can thiệp không mong muốn và cung cấp một giao diện thống nhất để tương tác với đối tượng.
+**1. Đóng gói** (Encapsulation): Đây là khái niệm che giấu chi tiết triển khai bên trong của đối tượng, ngăn người dùng trực tiếp truy cập vào dữ liệu bên trong. Đóng gói giúp bảo vệ dữ liệu và hành vi của đối tượng khỏi sự can thiệp không mong muốn và cung cấp một giao diện thống nhất để tương tác với đối tượng.
 
 <details>
 
@@ -78,6 +78,7 @@ public class Employee {
     }
 }
 
+// Lớp Main để thực thi mã
 public class Main {
     public static void main(String[] args) {
         // Tạo đối tượng của lớp Employee
@@ -93,13 +94,309 @@ public class Main {
 
 Trong ví dụ này, các biến `name`, `age`, và `salary` được đánh dấu là `private`, điều này có nghĩa là chúng không thể được truy cập trực tiếp từ bên ngoài lớp `Employee`. Thay vào đó, các phương thức `getName()`, `getAge()`, `getSalary()`, `setName()`, `setAge()`, và `setSalary()` được cung cấp để truy cập và cập nhật giá trị của các biến này, đảm bảo tính đóng gói.
 
+</details><br/>
+
+**2. Kế thừa** (Inheritance): Kế thừa cho phép một lớp mới kế thừa các thuộc tính và phương thức từ một lớp đã có sẵn. Lớp mới này có thể bổ sung thêm hoặc sửa đổi các thành phần thừa kế để đáp ứng nhu cầu riêng của nó, giúp tái sử dụng và mở rộng mã nguồn một cách hiệu quả.
+
+<details>
+
+<summary>Đoạn mã minh họa</summary>
+
+```java
+// Lớp cơ sở (hay lớp cha): Employee
+public class Employee {
+    private String name;
+    private int age;
+
+    // Constructor của lớp Employee
+    public Employee(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter và Setter
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Phương thức để hiển thị thông tin
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+// Lớp dẫn xuất (hay lớp con): Manager kế thừa từ Employee
+public class Manager extends Employee {
+    private double salary;
+
+    // Constructor của lớp Manager
+    public Manager(String name, int age, double salary) {
+        super(name, age); // Gọi constructor của lớp cơ sở (lớp cha)
+        this.salary = salary;
+    }
+
+    // Phương thức mới của lớp Manager
+    @Override
+    public void displayInfo() {
+        // Gọi phương thức displayInfo của lớp cơ sở (lớp cha)
+        super.displayInfo();
+        System.out.println("Salary: " + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Tạo đối tượng Manager
+        Manager manager = new Manager("Alice Johnson", 42, 75000);
+        manager.displayInfo(); // Hiển thị thông tin của Manager
+    }
+}
+```
+
+- Trong ví dụ này:
+  - Lớp `Employee` là lớp cơ sở, chứa thông tin cơ bản như tên và tuổi.
+  - Lớp `Manager` là lớp dẫn xuất từ `Employee` và bổ sung thêm thuộc tính `salary`.
+  - Lớp `Manager` sử dụng từ khóa `extends` để kế thừa từ lớp `Employee`. Constructor của `Manager` gọi `super(name, age)`; để khởi tạo các thuộc tính được kế thừa từ lớp `Employee`.
+  - Phương thức `displayInfo()` được ghi đè trong lớp `Manager` để thêm thông tin về mức lương, đồng thời gọi phương thức `displayInfo()` của lớp cơ sở để hiển thị thông tin cơ bản.
+
+</details><br/>
+
+**3. Đa hình** (Polymorphism): Đa hình là khả năng mà theo đó các lớp khác nhau có thể được sử dụng thông qua cùng một giao diện. Phương thức có thể được định nghĩa trong một lớp cơ sở và được thay thế bởi các phương thức có cùng tên trong các lớp dẫn xuất, cho phép các đối tượng được xử lý thông qua giao diện chung mà không cần biết kiểu dữ liệu cụ thể của chúng.
+
+Trong Java, tính đa hình được thể hiện thông qua việc ghi đè phương thức (method overriding) và nạp chồng phương thức (method overloading).
+
+<details>
+
+<summary>Ghi đè phương thức</summary>
+
+```java
+class Animal {
+    void speak() {
+        System.out.println("Animal speaks");
+    }
+}
+
+// Lớp Dog (chó) kế thừa lớp Animal (động vật)
+class Dog extends Animal {
+    // Lớp Dog ghi đè phương thức speak() của lớp cha
+    @Override
+    void speak() {
+        System.out.println("Dog barks");
+    }
+}
+
+// Lớp Cat (mèo) kế thừa lớp Animal (động vật)
+class Cat extends Animal {
+    // Lớp Dog ghi đè phương thức speak() của lớp cha
+    @Override
+    void speak() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        myAnimal.speak(); // Prints "Animal speaks"
+        myDog.speak();    // Prints "Dog barks"
+        myCat.speak();    // Prints "Cat meows"
+    }
+}
+```
+
+Trong ví dụ này, phương thức `speak()` được ghi đè trong các lớp `Dog` và `Cat`. Khi gọi phương thức `speak()` trên đối tượng của lớp con, Java xác định phương thức nào sẽ được gọi tại thời điểm chạy, tùy thuộc vào loại đối tượng mà biến tham chiếu đến.
+
 </details>
 
-- **Kế thừa** (Inheritance): Kế thừa cho phép một lớp mới kế thừa các thuộc tính và phương thức từ một lớp đã có sẵn. Lớp mới này có thể bổ sung thêm hoặc sửa đổi các thành phần thừa kế để đáp ứng nhu cầu riêng của nó, giúp tái sử dụng và mở rộng mã nguồn một cách hiệu quả.
+<details>
 
-- **Đa hình** (Polymorphism): Đa hình là khả năng mà theo đó các lớp khác nhau có thể được sử dụng thông qua cùng một giao diện. Phương thức có thể được định nghĩa trong một lớp cơ sở và được thay thế bởi các phương thức có cùng tên trong các lớp dẫn xuất, cho phép các đối tượng được xử lý thông qua giao diện chung mà không cần biết kiểu dữ liệu cụ thể của chúng.
+<summary>Nạp chồng phương thức</summary>
 
-- **Trừu tượng hóa** (Abstraction): Trừu tượng hóa cho phép lập trình viên tập trung vào những gì một đối tượng làm mà không cần quan tâm đến cách thực hiện. Nó tạo ra một lớp cơ sở mô tả một giao diện tổng quát mà các lớp dẫn xuất sẽ thực thi, đơn giản hóa việc quản lý sự phức tạp của hệ thống.
+```java
+class Printer {
+    // In chuỗi
+    void print(String data) {
+        System.out.println("String: " + data);
+    }
+
+    // In số nguyên
+    void print(int data) {
+        System.out.println("Integer: " + data);
+    }
+
+    // In số thực
+    void print(double data) {
+        System.out.println("Double: " + data);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+
+        // Gọi phương thức print nạp chồng
+        printer.print("Hello, World!");
+        printer.print(123);
+        printer.print(98.76);
+    }
+}
+```
+
+- Trong ví dụ này:
+  - Lớp `Printer` có ba phiên bản của phương thức `print`, mỗi phiên bản xử lý một kiểu dữ liệu cụ thể: `String`, `int`, và `double`.
+  - Mỗi lần gọi phương thức `print`, Java sẽ xác định phiên bản phù hợp dựa trên kiểu dữ liệu của đối số truyền vào.
+
+</details>
+
+<details>
+
+<summary>Triển khai giao diện</summary>
+
+Tính đa hình cũng được thể hiện rất rõ ràng qua cơ chế sử dụng interface. Interface trong Java là một cách để đạt được đa hình ở mức độ cao hơn, cho phép một lớp triển khai (implement) nhiều interface và một interface có thể được triển khai bởi nhiều lớp khác nhau.
+
+Giả sử chúng ta có một interface `CanFly` và hai lớp `Bird` và `Airplane` cả hai đều triển khai interface này:
+
+```java
+interface CanFly {
+    void fly();
+}
+
+class Bird implements CanFly {
+    public void fly() {
+        System.out.println("The bird flaps its wings to fly.");
+    }
+}
+
+class Airplane implements CanFly {
+    public void fly() {
+        System.out.println("The airplane turns on its engines to fly.");
+    }
+}
+
+public class TestPolymorphism {
+    public static void main(String[] args) {
+        CanFly myBird = new Bird();
+        CanFly myAirplane = new Airplane();
+
+        myBird.fly();        // Output: The bird flaps its wings to fly.
+        myAirplane.fly();    // Output: The airplane turns on its engines to fly.
+    }
+}
+```
+
+- Trong ví dụ này:
+  - Interface `CanFly` định nghĩa phương thức `fly()` mà không cung cấp phần thân phương thức.
+  - Cả `Bird` và `Airplane` đều triển khai phương thức `fly()` theo cách riêng của chúng.
+  - Cả hai đối tượng `myBird` và `myAirplane` đều được tham chiếu thông qua kiểu interface `CanFly`, và khi gọi phương thức `fly()`, đa hình cho phép chúng ta không cần quan tâm đến việc đối tượng thuộc lớp nào; chúng ta chỉ biết rằng chúng có thể bay.
+
+</details>
+
+**4. Trừu tượng hóa** (Abstraction): Trừu tượng hóa cho phép lập trình viên tập trung vào những gì một đối tượng làm mà không cần quan tâm đến cách thực hiện. Nó tạo ra một lớp cơ sở mô tả một giao diện tổng quát mà các lớp dẫn xuất sẽ thực thi, đơn giản hóa việc quản lý sự phức tạp của hệ thống.
+
+Trong Java, trừu tượng hóa có thể được thực hiện bằng hai cách:
+
+<details>
+
+<summary>Lớp trừu tượng</summary>
+
+Lớp trừu tượng (Abstract Class) là một lớp không thể tạo đối tượng và có thể chứa phương thức trừu tượng không có phần thân.
+
+```java
+abstract class Animal {
+    // Phương thức trừu tượng
+    abstract void makeSound();
+
+    // Phương thức bình thường
+    void breathe() {
+        System.out.println("Breathing...");
+    }
+}
+
+class Dog extends Animal {
+    // Triển khai phương thức trừu tượng trong lớp con
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound(); // In ra "Bark"
+        myDog.breathe();   // In ra "Breathing..."
+    }
+}
+```
+
+- Trong ví dụ này:
+  - `Animal` là một lớp trừu tượng có phương thức trừu tượng `makeSound()`.
+  - `Dog` là lớp kế thừa từ `Animal` và phải cung cấp triển khai cụ thể cho phương thức trừu tượng `makeSound()`.
+
+</details>
+
+<details>
+
+<summary>Giao diện</summary>
+
+Giao diện (Interface) chỉ có thể chứa các phương thức trừu tượng mà không có triển khai.
+
+```java
+interface Vehicle {
+    void start();
+    void stop();
+}
+
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car starting");
+    }
+
+    public void stop() {
+        System.out.println("Car stopping");
+    }
+}
+
+class Bike implements Vehicle {
+    public void start() {
+        System.out.println("Bike starting");
+    }
+
+    public void stop() {
+        System.out.println("Bike stopping");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        Vehicle myBike = new Bike();
+        
+        myCar.start();  // In ra "Car starting"
+        myCar.stop();   // In ra "Car stopping"
+        myBike.start(); // In ra "Bike starting"
+        myBike.stop();  // In ra "Bike stopping"
+    }
+}
+```
+
+Ở đây, `Vehicle` là một interface định nghĩa hai phương thức trừu tượng: `start()` và `stop()`. Các lớp `Car` và `Bike` triển khai interface này và cung cấp triển khai cụ thể cho mỗi phương thức.
+
+</details>
 
 </details>
 
