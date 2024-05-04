@@ -32,7 +32,7 @@ Trong ví dụ này:
 
 <div align = "center">
 
-![Minh họa 4](images\04.png)
+<img alt = "Minh họa 4" src = "https://github.com/HaiAu2501/Object-oriented-Programming-with-Java/blob/main/images/04.png">
 
 </div>
 
@@ -113,7 +113,7 @@ Chi tiết như sau:
 
 <div align = "center">
 
-![Minh họa 5](images\05.png)
+<img alt = "Minh họa 5" src = "https://github.com/HaiAu2501/Object-oriented-Programming-with-Java/blob/main/images/05.png">
 
 </div>
 
