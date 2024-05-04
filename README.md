@@ -19,13 +19,23 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&random=false&width=450&lines=Object-oriented+Programming+with+Java" alt="Typing SVG" /></a>
 </p>
 
+## Ôn tập giữa kỳ ư bro?
+
+- [Câu 1: Các nguyên tắc cơ bản của OOP và minh họa bằng ngôn ngữ Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng)
+- [Câu 2: Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](1.%20The%20Java%20Language/ArgumentPassing.java)
+- [Câu 3: String, StringBuffer, String Builder?](3.%20Core%20Ultilities/StringTips.java)
+- [Câu 4: Cài đặt theo sơ đồ lớp UML.](#ngôn-ngữ-mô-hình-hóa-thống-nhất)
+- Câu 5: Hết cứu.
+
 Chào mừng bạn đến với kho lưu trữ **Lập trình hướng đối tượng với Java**! Nơi đây cung cấp một nguồn tài nguyên toàn diện để khám phá và học hỏi lập trình hướng đối tượng qua ngôn ngữ Java.
 
 > Lập trình hướng đối tượng (OOP - Object-Oriented Programming) là một mô hình lập trình phổ biến được sử dụng rộng rãi trong phát triển phần mềm. Nó được dựa trên các khái niệm về "đối tượng", là các thực thể kết hợp cả dữ liệu (thuộc tính) và các phương thức (hành vi). OOP tập trung vào việc thiết kế phần mềm dựa trên các đối tượng tương tác với nhau, thay vì quy trình và logic như trong lập trình hướng thủ tục.
 
+## Giới thiệu về lập trình hướng đối tượng
+
 <details>
 
-<summary> Các nguyên tắc cơ bản của lập trình hướng đối tượng</summary>
+<summary>Các nguyên tắc cơ bản của lập trình hướng đối tượng</summary>
 <br/>
 
 Lập trình hướng đối tượng dựa trên 4 nguyên tắc cơ bản, đó là: Đóng gói, Kế thừa, Đa hình, và Trừu tượng hóa. Mỗi nguyên tắc này cung cấp một cách tiếp cận để giải quyết các vấn đề trong phát triển phần mềm và giúp quản lý mã nguồn một cách hiệu quả hơn.
