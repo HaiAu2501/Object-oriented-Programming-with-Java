@@ -1,3 +1,5 @@
 *.class
 .vscode/
 .vscode/settings.json
+
+.bin/
