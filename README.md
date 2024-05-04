@@ -22,7 +22,7 @@
 ## Ôn tập giữa kỳ ư bro?
 
 - [Câu 1: Các nguyên tắc cơ bản của OOP và minh họa bằng ngôn ngữ Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng)
-- [Câu 2: Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](1.%20The%20Java%20Language/ArgumentPassing.java)
+- [Câu 2: Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](ArgumentPassing.md)
 - [Câu 3: String, StringBuffer, String Builder?](3.%20Core%20Ultilities/StringTips.java)
 - [Câu 4: Cài đặt theo sơ đồ lớp UML.](#ngôn-ngữ-mô-hình-hóa-thống-nhất)
 - Câu 5: Hết cứu.
