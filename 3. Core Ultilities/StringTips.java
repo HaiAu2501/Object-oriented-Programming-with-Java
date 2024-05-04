@@ -51,6 +51,7 @@
  * ...
  */
 
+@SuppressWarnings("unused")
 public class StringTips {
     public static void main(String[] args) {
         System.out.println("--- String");

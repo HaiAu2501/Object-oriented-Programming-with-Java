@@ -800,6 +800,271 @@ public class Dog {
 
 ## Ngôn ngữ mô hình hóa thống nhất
 
+Unified Modeling Language (UML) là một công cụ mô hình hóa đồ họa tiêu chuẩn, được thiết kế để phác họa, mô tả và tài liệu về các khía cạnh khác nhau của phần mềm ứng dụng. Nó đặc biệt hữu ích trong lĩnh vực lập trình hướng đối tượng, vì nó cung cấp một cách thức trực quan để thể hiện các lớp, đối tượng, và các mối quan hệ giữa chúng. UML bao gồm nhiều loại sơ đồ khác nhau, nhưng trong bối cảnh lập trình hướng đối tượng, sơ đồ lớp (class diagrams) và sơ đồ tương tác (interaction diagrams) là hai loại được sử dụng phổ biến nhất.
+
+<details>
+
+<summary>Ý nghĩa đối với Lập trình hướng đối tượng</summary>
+
+- UML cho phép lập trình viên mô tả cấu trúc của hệ thống bằng cách sử dụng sơ đồ lớp. Sơ đồ này thể hiện các lớp trong hệ thống, các thuộc tính, phương thức của chúng, và quan trọng nhất là mối quan hệ giữa các lớp như kế thừa, liên kết, tổng hợp và kết hợp. Điều này giúp lập trình viên hiểu và thiết kế hệ thống một cách hệ thống hơn.
+
+- Một khi sơ đồ UML đã được hoàn thiện, nó có thể dùng như là cơ sở để viết mã nguồn. Trong OOP, việc chuyển từ sơ đồ lớp sang mã nguồn (thường là Java, C#, hay C++) là khá trực tiếp, do sự tương đồng giữa các khái niệm mô tả trong UML và cấu trúc lớp trong các ngôn ngữ lập trình này.
+
+- UML giúp định nghĩa rõ ràng các mối quan hệ giữa các đối tượng, làm nổi bật cách thức giao tiếp và tương tác giữa chúng qua sơ đồ tương tác như sơ đồ tuần tự (sequence diagrams) và sơ đồ cộng tác (collaboration diagrams). Điều này giúp lập trình viên hiểu được luồng dữ liệu và kiểm soát trong ứng dụng.
+
+- Trước khi bắt đầu viết mã, UML giúp nhóm phát triển có thể phát hiện và sửa chữa những vấn đề về thiết kế. Sự thống nhất trong cách sử dụng UML còn giúp các thành viên trong nhóm dễ dàng hiểu ý tưởng của nhau, từ đó tăng hiệu quả phối hợp làm việc.
+
+- UML cung cấp tài liệu đầy đủ cho phần mềm, điều này rất hữu ích trong giai đoạn bảo trì và nâng cấp phần mềm. Một sơ đồ UML tốt có thể giúp người mới tham gia dự án nắm bắt nhanh chóng cấu trúc và chức năng của hệ thống.
+
+</details>
+
+<details>
+
+<summary>Sơ đồ lớp</summary>
+
+Class Diagram (Sơ đồ lớp) là một trong những loại sơ đồ được sử dụng trong UML và nó đóng một vai trò quan trọng trong việc mô hình hóa hệ thống phần mềm. Class Diagram cung cấp một cái nhìn tổng quát về cấu trúc của một ứng dụng bằng cách hiển thị các lớp của hệ thống, các thuộc tính và phương thức của chúng, và mối quan hệ giữa các lớp đó. Các mối quan hệ này có thể bao gồm: liên kết (association), kế thừa (inheritance), thực thi (realization), phụ thuộc (dependency), kết tập (aggregation), tổng hợp (composition).
+
+### 1. Ký hiệu lớp
+
+Một lớp đại diện cho một khái niệm bao gồm trạng thái (thuộc tính) và hành vi (phương thức). Mỗi thuộc tính có một kiểu. Mỗi phương thức có một chữ ký. Tên lớp là thông tin bắt buộc duy nhất.
+
+- Tên Lớp: Tên của lớp xuất hiện trong phần đầu tiên.
+- Thuộc tính Lớp:
+  - Các thuộc tính được hiển thị trong phần thứ hai.
+  - Kiểu thuộc tính được hiển thị sau dấu hai chấm.
+  - Các thuộc tính tương ứng với các biến thành viên (các thành viên dữ liệu) trong mã.
+- Phương thức Lớp (Các phương thức):
+  - Các phương thức được hiển thị trong phần thứ ba. Đây là các dịch vụ mà lớp cung cấp.
+  - Kiểu trả về của phương thức được hiển thị sau dấu hai chấm ở cuối chữ ký phương thức.
+  - Kiểu trả về của các tham số phương thức được hiển thị sau dấu hai chấm theo sau tên tham số. Các phương thức tương ứng với các phương thức lớp trong mã.
+
+Xét ví dụ sau:
+
+<div align = "center">
+
+![Minh họa 1](images/01.png)
+
+</div>
+
+Sơ đồ UML này tương ứng với class `Animal` trong mã như sau:
+
+```java
+public class Animal {
+    // Các thuộc tính của lớp
+    public String name; // Biến thành viên công khai cho tên
+    private int age;     // Biến thành viên riêng tư cho tuổi
+    private String species; // Biến thành viên riêng tư cho loài
+
+    // Phương thức getter cho thuộc tính name
+    public String getName() {
+        return name;
+    }
+
+    // Phương thức setter cho thuộc tính name
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+### 2. Ký hiệu khả năng truy cập
+
+Các ký hiệu `+`, `-` và `#` đặt trước tên thuộc tính và phương thức trong một lớp biểu thị mức độ khả năng truy cập của thuộc tính và phương thức đó. Cụ thể:
+
+- Dấu `+` biểu thị thuộc tính hoặc phương thức công khai (public).
+- Dấu `-` biểu thị thuộc tính hoặc phương thức riêng tư (private).
+- Dấu `#` biểu thị thuộc tính hoặc phương thức bảo vệ (protected).
+- Nếu không có ký hiệu gì, thì là mặc định (default).
+
+### 3. Ký hiệu quan hệ giữa các lớp
+
+<div align = "center">
+
+![Minh họa 2](images/02.png)
+
+</div>
+
+- Liên kết (Association) là mối quan hệ giữa hai lớp mà trong đó các đối tượng của một lớp kết nối với các đối tượng của lớp kia. Quan hệ này có thể là một chiều hoặc hai chiều.
+- Kế thừa (Inheritance) là quan hệ mà một lớp (lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (lớp cha). Lớp con cũng có thể thêm hoặc ghi đè các phương thức và thuộc tính của lớp cha.
+- Thực thi (Realization) là mối quan hệ giữa một lớp và một interface, nơi lớp đảm nhận trách nhiệm triển khai tất cả các phương thức được định nghĩa trong interface đó. Nếu có một interface `Flyable` có phương thức `fly()`, lớp `Bird` có thể thực thi interface này bằng cách triển khai phương thức `fly()`.
+- Phụ thuộc (Dependency) xảy ra khi một lớp sử dụng một lớp khác; ví dụ, như là tham số trong một phương thức. Sự thay đổi trong lớp được sử dụng có thể ảnh hưởng đến lớp sử dụng.
+- Kết tập (Aggregation) là một dạng đặc biệt của liên kết, mô tả mối quan hệ "có một" (has-a) nhưng không bắt buộc, và các đối tượng tồn tại độc lập với nhau. Một lớp `School` có thể có nhiều đối tượng của lớp `Teacher`, nhưng các giáo viên vẫn tồn tại độc lập với trường học.
+- Tổng hợp (Composition) cũng là một dạng đặc biệt của liên kết, thể hiện mối quan hệ "chứa" (contains) giữa các đối tượng, trong đó đối tượng con không tồn tại độc lập khi đối tượng cha bị hủy. Lớp `House` có thể chứa nhiều đối tượng của lớp `Room`. Khi đối tượng `House` bị hủy, các `Room` cũng sẽ bị hủy theo.
+
+Xét ví dụ sau đây:
+
+<div align = "center">
+
+![Minh họa 3](images/03.png)
+
+</div>
+
+Triển khai sơ đồ UML này trong Java như sau:
+
+```java
+public class Person {
+    private String name;
+    private int age;
+    private Address address; // Liên kết sử dụng lớp Address
+
+    public Person(String name, int age, Address address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    // Getter và Setter cho các thuộc tính
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+}
+
+// Định nghĩa lớp Student kế thừa từ Person
+public class Student extends Person {
+    public Student(String name, int age, Address address) {
+        super(name, age, address);
+    }
+}
+
+// Định nghĩa lớp Teacher kế thừa từ Person
+public class Teacher extends Person {
+    public Teacher(String name, int age, Address address) {
+        super(name, age, address);
+    }
+}
+
+// Định nghĩa lớp Staff kế thừa từ Person
+public class Staff extends Person {
+    public Staff(String name, int age, Address address) {
+        super(name, age, address);
+    }
+}
+
+// Định nghĩa lớp Address
+public class Address {
+    private String street;
+    private String city;
+    private String country;
+
+    public Address(String street, String city, String country) {
+        this.street = street;
+        this.city = city;
+        this.country = country;
+    }
+
+    // Getter và Setter cho các thuộc tính
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+}
+
+// Định nghĩa lớp Department chứa Teacher và Course
+public class Department {
+    private String name;
+    private List<Teacher> teachers; // Aggregation
+    private List<Course> courses; // Composition
+
+    public Department(String name) {
+        this.name = name;
+        this.teachers = new ArrayList<>();
+        this.courses = new ArrayList<>();
+    }
+
+    // Phương thức thêm giáo viên và khóa học
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
+    }
+
+    public void addCourse(Course course) {
+        courses.add(course);
+    }
+}
+
+// Định nghĩa lớp Course
+public class Course {
+    private String courseName;
+    private List<Teacher> teachers; // Association
+
+    public Course(String courseName) {
+        this.courseName = courseName;
+        this.teachers = new ArrayList<>();
+    }
+
+    public void addTeacher(Teacher teacher) {
+        teachers.add(teacher);
+    }
+}
+
+// Định nghĩa interface Maintainable
+public interface Maintainable {
+    void maintain();
+}
+
+// Định nghĩa lớp School
+public class School implements Maintainable {
+    private String name;
+    private List<Department> departments; // Composition
+
+    public School(String name) {
+        this.name = name;
+        this.departments = new ArrayList<>();
+    }
+
+    public void addDepartment(Department department) {
+        departments.add(department);
+    }
+
+    // Triển khai phương thức từ interface Maintainable
+    @Override
+    public void maintain() {
+        System.out.println("Maintaining the school facilities...");
+        // Logic bảo trì cơ sở vật chất có thể được thực hiện ở đây
+    }
+}
+```
+
+<details>
+
 ## Tài liệu tham khảo
 
 - Patrick Niemeyer, Jonathan Knudsen; *Learning Java*; Third Edition.
