@@ -22,7 +22,10 @@
 ## Ôn tập giữa kỳ ư bro?
 
 - [Câu 1: Các nguyên tắc cơ bản của OOP và minh họa bằng ngôn ngữ Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng)
-- [Câu 2: Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](ArgumentPassing.md)
+- Câu 2:
+  - [a. Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](ArgumentPassing.md)
+  - [b. So sánh lớp trừu tượng và giao diện trong Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng) Xem trong mục về tính Trừu tượng hóa.
+  - [c. Phân biệt kết tập và kế thừa trong Java.](#ngôn-ngữ-mô-hình-hóa-thống-nhất) Xem trong mục quan hệ giữa các lớp.
 - [Câu 3: String, StringBuffer, String Builder?](3.%20Core%20Ultilities/StringTips.java)
 - [Câu 4: Cài đặt theo sơ đồ lớp UML.](#ngôn-ngữ-mô-hình-hóa-thống-nhất)
 - Câu 5: Hết cứu.
@@ -405,6 +408,61 @@ public class Main {
 ```
 
 Ở đây, `Vehicle` là một interface định nghĩa hai phương thức trừu tượng: `start()` và `stop()`. Các lớp `Car` và `Bike` triển khai interface này và cung cấp triển khai cụ thể cho mỗi phương thức.
+
+</details>
+
+<details>
+
+<summary>Phân biệt lớp trừu tượng và giao diện</summary>
+
+**Sự giống nhau:**
+
+- Cả hai không thể được khởi tạo trực tiếp. Chúng đều là cấu trúc dùng để định nghĩa mẫu cho các lớp khác, chứ không phải để tạo đối tượng trực tiếp từ chúng.
+- Cả giao diện và lớp trừu tượng đều được sử dụng để mở rộng hoặc triển khai bởi các lớp khác. Chúng cung cấp một cơ sở để định nghĩa các phương thức mà lớp con có thể hoặc phải triển khai.
+- Chúng đóng vai trò quan trọng trong kế thừa, nơi chúng định nghĩa một bộ khung hoặc mẫu cho các lớp khác để tuân theo hoặc mở rộng.
+
+**Sự khác nhau:**
+
+<div align="center">
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-c3ow">Lớp trừu tượng</th>
+    <th class="tg-c3ow">Giao diện</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mục đích</td>
+    <td class="tg-0pky">- Thường được sử dụng khi các lớp con có nhiều chức năng chung và cần một nơi chung để đặt mã có thể tái sử dụng.<br>- Giúp định nghĩa một khuôn mẫu cơ sở cho các lớp con, đảm bảo tất cả lớp con kế thừa nó phải tuân theo một thiết kế chung.</td>
+    <td class="tg-0pky">- Thường được sử dụng để định nghĩa một hợp đồng cho một chức năng mà không cần quan tâm đến cách triển khai. <br>- Lý tưởng cho các chức năng có thể được triển khai rất khác nhau.<br>- Tốt cho việc định nghĩa tập hợp các phương thức mà một lớp có thể thực hiện.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Triển khai</td>
+    <td class="tg-0pky">- Có thể chứa cả phương thức trừu tượng (không có phần thân) lẫn phương thức không trừu tượng (có phần thân).<br>- Lớp trừu tượng cũng có thể chứa các trường dữ liệu và constructor.</td>
+    <td class="tg-0pky">- Ban đầu chỉ cho phép định nghĩa các phương thức trừu tượng không có phần thân. <br>- Từ Java 8 trở đi, giao diện còn cho phép định nghĩa các phương thức có thân thông qua default methods và static methods.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Đa kế thừa</td>
+    <td class="tg-0pky">- Một lớp chỉ có thể kế thừa từ một lớp trừu tượng duy nhất. <br>- Điều này hạn chế tính linh hoạt của đa kế thừa như trong giao diện.</td>
+    <td class="tg-0pky">- Java cho phép một lớp có thể thực hiện nhiều giao diện cùng một lúc, cung cấp một hình thức đa kế thừa.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Hàm tạo</td>
+    <td class="tg-0pky">- Có thể có constructor, giúp thiết lập các điều kiện ban đầu cho lớp.</td>
+    <td class="tg-0pky">- Không thể có constructor.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Trường dữ liệu</td>
+    <td class="tg-0pky">- Khác với giao diện, lớp trừu tượng có thể có các trường dữ liệu không phải là static và final.<br>- Các lớp con có thể có các thuộc tính riêng biệt được kế thừa từ lớp trừu tượng.</td>
+    <td class="tg-0pky">- Giao diện không hỗ trợ trường dữ liệu không phải là static và final.<br>- Mọi biến được khai báo trong giao diện đều tự động được coi là public static final.</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
 
 </details>
 
@@ -874,12 +932,48 @@ Các ký hiệu `+`, `-` và `#` đặt trước tên thuộc tính và phương
 
 </div>
 
-- Liên kết (Association) là mối quan hệ giữa hai lớp mà trong đó các đối tượng của một lớp kết nối với các đối tượng của lớp kia. Quan hệ này có thể là một chiều hoặc hai chiều.
-- Kế thừa (Inheritance) là quan hệ mà một lớp (lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (lớp cha). Lớp con cũng có thể thêm hoặc ghi đè các phương thức và thuộc tính của lớp cha.
-- Thực thi (Realization) là mối quan hệ giữa một lớp và một interface, nơi lớp đảm nhận trách nhiệm triển khai tất cả các phương thức được định nghĩa trong interface đó. Nếu có một interface `Flyable` có phương thức `fly()`, lớp `Bird` có thể thực thi interface này bằng cách triển khai phương thức `fly()`.
-- Phụ thuộc (Dependency) xảy ra khi một lớp sử dụng một lớp khác; ví dụ, như là tham số trong một phương thức. Sự thay đổi trong lớp được sử dụng có thể ảnh hưởng đến lớp sử dụng.
-- Kết tập (Aggregation) là một dạng đặc biệt của liên kết, mô tả mối quan hệ "có một" (has-a) nhưng không bắt buộc, và các đối tượng tồn tại độc lập với nhau. Một lớp `School` có thể có nhiều đối tượng của lớp `Teacher`, nhưng các giáo viên vẫn tồn tại độc lập với trường học.
-- Tổng hợp (Composition) cũng là một dạng đặc biệt của liên kết, thể hiện mối quan hệ "chứa" (contains) giữa các đối tượng, trong đó đối tượng con không tồn tại độc lập khi đối tượng cha bị hủy. Lớp `House` có thể chứa nhiều đối tượng của lớp `Room`. Khi đối tượng `House` bị hủy, các `Room` cũng sẽ bị hủy theo.
+- **Liên kết (Association)** là mối quan hệ giữa hai lớp mà trong đó các đối tượng của một lớp kết nối với các đối tượng của lớp kia. Quan hệ này có thể là một chiều hoặc hai chiều.
+- **Kế thừa (Inheritance)** là quan hệ mà một lớp (lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (lớp cha). Lớp con cũng có thể thêm hoặc ghi đè các phương thức và thuộc tính của lớp cha.
+- **Thực thi (Realization)** là mối quan hệ giữa một lớp và một interface, nơi lớp đảm nhận trách nhiệm triển khai tất cả các phương thức được định nghĩa trong interface đó. Nếu có một interface `Flyable` có phương thức `fly()`, lớp `Bird` có thể thực thi interface này bằng cách triển khai phương thức `fly()`.
+- **Phụ thuộc (Dependency)** xảy ra khi một lớp sử dụng một lớp khác; ví dụ, như là tham số trong một phương thức. Sự thay đổi trong lớp được sử dụng có thể ảnh hưởng đến lớp sử dụng.
+- **Kết tập (Aggregation)** là một dạng đặc biệt của liên kết, mô tả mối quan hệ "có một" (has-a) nhưng không bắt buộc, và các đối tượng tồn tại độc lập với nhau. Một lớp `School` có thể có nhiều đối tượng của lớp `Teacher`, nhưng các giáo viên vẫn tồn tại độc lập với trường học.
+- **Tổng hợp (Composition)** cũng là một dạng đặc biệt của liên kết, thể hiện mối quan hệ "chứa" (contains) giữa các đối tượng, trong đó đối tượng con không tồn tại độc lập khi đối tượng cha bị hủy. Lớp `House` có thể chứa nhiều đối tượng của lớp `Room`. Khi đối tượng `House` bị hủy, các `Room` cũng sẽ bị hủy theo.
+
+<div align="center">
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-baqh">Kế thừa</th>
+    <th class="tg-baqh">Kết tập</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Định nghĩa</td>
+    <td class="tg-0lax">- Kế thừa là một cơ chế trong đó một lớp (gọi là lớp con) có thể kế thừa tính chất và phương thức của một lớp khác (gọi là lớp cha). <br>- Cho phép lớp con tái sử dụng mã lệnh của lớp cha mà không cần phải viết lại.<br>- Tương ứng với mối quan hệ "is-a".</td>
+    <td class="tg-0lax">- Kết tập là một dạng của quan hệ "có" giữa hai lớp. <br>- Biểu thị một mối quan hệ trong đó một đối tượng có thể chứa hoặc tham chiếu đến đối tượng khác, nhưng hai đối tượng có thể tồn tại độc lập với nhau.<br>- Tương ứng với mối quan hệ "has-a".</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Mục đích</td>
+    <td class="tg-0lax">- Tái sử dụng mã lệnh và cải thiện tính mô-đun hóa của ứng dụng.<br>- Cũng hỗ trợ tính đa hình, cho phép phương thức của lớp con có thể ghi đè hoặc mở rộng phương thức của lớp cha.<br>- Ví dụ: Lớp Animal có phương thức move(), lớp Bird và Fish có thể kế thừa lớp Animal và sử dụng hoặc ghi đè phương thức move() để phù hợp với bản chất di chuyển của chúng.</td>
+    <td class="tg-0lax">- Biểu diễn mối quan hệ giữa các đối tượng, nơi các đối tượng có thể có mối quan hệ một phần với nhau nhưng không phụ thuộc hoàn toàn vào nhau.<br>- Giúp tăng cường sự linh hoạt trong cấu trúc dữ liệu và quản lý các đối tượng phức tạp.<br>- Ví dụ, lớp Square có thể có các đối tượng của lớp Point. Mỗi hình vuông bao gồm bốn đối tượng của lớp điểm (chỉ các đỉnh) nhưng các điểm có thể tồn tại độc lập mà không là đỉnh của hình vuông.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Sự phụ thuộc</td>
+    <td class="tg-0lax">- Lớp con phụ thuộc mạnh mẽ vào lớp cha vì nó sử dụng trực tiếp các tính chất và phương thức của lớp cha. </td>
+    <td class="tg-0lax">- Các đối tượng liên quan có thể tồn tại độc lập; chúng không phụ thuộc mạnh mẽ vào nhau.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Khả năng</td>
+    <td class="tg-0lax">- Mở rộng hoặc tùy chỉnh lớp cha.<br>- Mô hình hóa mối quan hệ phân cấp.</td>
+    <td class="tg-0lax">- Quản lý các đối tượng có liên kết.<br>- Mô hình hóa mối quan hệ thực thể.</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
 
 Xét ví dụ sau đây:
 
