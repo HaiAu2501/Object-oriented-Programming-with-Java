@@ -939,6 +939,10 @@ Các ký hiệu `+`, `-` và `#` đặt trước tên thuộc tính và phương
 - **Kết tập (Aggregation)** là một dạng đặc biệt của liên kết, mô tả mối quan hệ "có một" (has-a) nhưng không bắt buộc, và các đối tượng tồn tại độc lập với nhau. Một lớp `School` có thể có nhiều đối tượng của lớp `Teacher`, nhưng các giáo viên vẫn tồn tại độc lập với trường học.
 - **Tổng hợp (Composition)** cũng là một dạng đặc biệt của liên kết, thể hiện mối quan hệ "chứa" (contains) giữa các đối tượng, trong đó đối tượng con không tồn tại độc lập khi đối tượng cha bị hủy. Lớp `House` có thể chứa nhiều đối tượng của lớp `Room`. Khi đối tượng `House` bị hủy, các `Room` cũng sẽ bị hủy theo.
 
+<details>
+
+<summary>Phân biệt Kế thừa và Kết tập</summary>
+
 <div align="center">
 
 <table class="tg">
@@ -974,6 +978,8 @@ Các ký hiệu `+`, `-` và `#` đặt trước tên thuộc tính và phương
 </table>
 
 </div>
+
+</details>
 
 Xét ví dụ sau đây:
 
