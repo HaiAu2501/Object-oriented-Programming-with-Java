@@ -19,17 +19,6 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&random=false&width=450&lines=Object-oriented+Programming+with+Java" alt="Typing SVG" /></a>
 </p>
 
-## Ôn tập giữa kỳ ư bro?
-
-- [Câu 1: Các nguyên tắc cơ bản của OOP và minh họa bằng ngôn ngữ Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng)
-- Câu 2:
-  - [a. Truyền tham trị và truyền tham chiếu trong Java? Ví dụ minh họa và giải thích.](ArgumentPassing.md)
-  - [b. So sánh lớp trừu tượng và giao diện trong Java?](#giới-thiệu-về-lập-trình-hướng-đối-tượng) Xem trong mục về tính Trừu tượng hóa.
-  - [c. Phân biệt kết tập và kế thừa trong Java.](#ngôn-ngữ-mô-hình-hóa-thống-nhất) Xem trong mục quan hệ giữa các lớp.
-- [Câu 3: String, StringBuffer, String Builder?](3.%20Core%20Ultilities/StringTips.java)
-- [Câu 4: Cài đặt theo sơ đồ lớp UML.](#ngôn-ngữ-mô-hình-hóa-thống-nhất)
-- Câu 5: Hết cứu.
-
 Chào mừng bạn đến với kho lưu trữ **Lập trình hướng đối tượng với Java**! Nơi đây cung cấp một nguồn tài nguyên toàn diện để khám phá và học hỏi lập trình hướng đối tượng qua ngôn ngữ Java.
 
 > Lập trình hướng đối tượng (OOP - Object-Oriented Programming) là một mô hình lập trình phổ biến được sử dụng rộng rãi trong phát triển phần mềm. Nó được dựa trên các khái niệm về "đối tượng", là các thực thể kết hợp cả dữ liệu (thuộc tính) và các phương thức (hành vi). OOP tập trung vào việc thiết kế phần mềm dựa trên các đối tượng tương tác với nhau, thay vì quy trình và logic như trong lập trình hướng thủ tục.
